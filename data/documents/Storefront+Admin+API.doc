@@ -1,0 +1,2095 @@
+Date: Tue, 4 Mar 2025 08:12:51 +0000 (UTC)
+Message-ID: <1644550334.363.1741075971810@ip-172-21-41-46.ap-south-1.compute.internal>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_362_913305849.1741075971809"
+
+------=_Part_362_913305849.1741075971809
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Storefront Admin API</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-link-pressed, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Storefront Admin API</h1>
+    <div class=3D"Section1">
+        <p>
+ <style type=3D"text/css">/*<![CDATA[*/
+div.rbtoc1741075971759 {padding: 0px;}
+div.rbtoc1741075971759 ul {margin-left: 0px;}
+div.rbtoc1741075971759 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p>
+<div class=3D"toc-macro rbtoc1741075971759">
+ <ul class=3D"toc-indentation">
+  <li><a href=3D"#StorefrontAdminAPI-StagingEndpoint">Staging Endpoint</a><=
+/li>
+  <li><a href=3D"#StorefrontAdminAPI-Dev1Endpoint">Dev1 Endpoint</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-ProductionEndpoint">Production Endpoin=
+t</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-APItofetchallwidgettypes">API to fetch=
+ all widget types</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-APItofetchallviewtypeswhicharemanagedb=
+yCT">API to fetch all view types which are managed by CT</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-ListofViewsinaStorefront">List of View=
+s in a Storefront</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-ListofItems(Banners)inaView">List of I=
+tems (Banners) in a View</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-ListofVisibilityOptions">List of Visib=
+ility Options</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-ListofItemTypes">List of Item Types</a=
+></li>
+  <li><a href=3D"#StorefrontAdminAPI-CreateItem(CalledfromSFadminpanel)">Cr=
+eate Item (Called from SF admin panel)</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-UpdateItem(CalledfromSFadminpanel)">Up=
+date Item (Called from SF admin panel)</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-RemoveItem(CalledfromStorefrontAdmin)"=
+>Remove Item (Called from Storefront Admin)</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-CreateBanner(CalledfromWidgetServe&amp=
+;Adspanel)">Create Banner (Called from Widget Serve &amp; Ads panel)</a></l=
+i>
+  <li><a href=3D"#StorefrontAdminAPI-UpdateBanner(CalledfromWidgetServe&amp=
+;Adspanel)">Update Banner (Called from Widget Serve &amp; Ads panel)</a></l=
+i>
+  <li><a href=3D"#StorefrontAdminAPI-RemoveBanner(CalledfromWidgetServe&amp=
+;AdsPanel)">Remove Banner (Called from Widget Serve &amp; Ads Panel)</a></l=
+i>
+  <li><a href=3D"#StorefrontAdminAPI-GetBanner(CalledfromWidgetServe&amp;Ad=
+sPanel)">Get Banner (Called from Widget Serve &amp; Ads Panel)</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-GetDeviceParamsInfo">Get Device Params=
+ Info</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-ViewCloning">View Cloning</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-CreateView">Create View</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-UpdateView">Update View</a></li>
+  <li><a href=3D"#StorefrontAdminAPI-UploadImage">Upload Image</a></li>
+ </ul>
+</div>
+<p></p>
+<h1 id=3D"StorefrontAdminAPI-StagingEndpoint">Staging Endpoint</h1>
+<p><a href=3D"https://storefrontadmin-staging.paytm.com/" class=3D"external=
+-link" rel=3D"nofollow">https://storefrontadmin-staging.paytm.com/</a></p>
+<h1 id=3D"StorefrontAdminAPI-Dev1Endpoint">Dev1 Endpoint</h1>
+<p><a href=3D"https://storefrontadmin-staging.paytm.com/dev1/" class=3D"ext=
+ernal-link" rel=3D"nofollow">https://storefrontadmin-staging.paytm.com/dev1=
+/</a></p>
+<h1 id=3D"StorefrontAdminAPI-ProductionEndpoint">Production Endpoint&nbsp;<=
+/h1>
+<p><a href=3D"https://storefrontadmin-staging.paytm.com/" class=3D"external=
+-link" rel=3D"nofollow">https://storefrontadmin.paytm.com/</a></p>
+<div class=3D"openapi-widget">
+ <template>
+  openapi: 3.0.0 info: title: Storefront Admin API description: API for lis=
+ting all storefront decorators version: 1.0.0 paths: /decorators/{merchantI=
+d}/{entityType}: get: summary: Get Decorators description: Retrieve a list =
+of decorators based on various filters tags: - Decorators parameters: - nam=
+e: merchantId in: path required: true schema: type: string description: The=
+ ID of the merchant - name: entityType in: path required: true schema: type=
+: string description: The type of the entity - name: id in: query required:=
+ false schema: type: integer description: The ID of the decorator - name: l=
+imit in: query required: false schema: type: string description: The limit =
+for pagination - name: page in: query required: false schema: type: string =
+description: The page number for pagination - name: namePartial in: query r=
+equired: false schema: type: string description: Partial name for filtering=
+ decorators - name: orderBy in: query required: false schema: type: string =
+description: Order by field - name: name in: query required: false schema: =
+type: string description: Name of the decorator - name: orderColumn in: que=
+ry required: false schema: type: string description: Column to order by - n=
+ame: viewId in: query required: false schema: type: integer description: Th=
+e view ID - name: watchers in: query required: false schema: type: string d=
+escription: Watchers of the decorator - name: watcherPartial in: query requ=
+ired: false schema: type: string description: Partial watcher name for filt=
+ering - name: entity_associated_with in: query required: false schema: type=
+: string description: Entity associated with the decorator - name: headers =
+in: header required: false schema: type: object additionalProperties: type:=
+ string description: Additional headers responses: '200': description: A li=
+st of decorators content: application/json: schema: type: array items: $ref=
+: '#/components/schemas/GetDecoratorResponseDTO' '400': description: Bad re=
+quest '401': description: Unauthorized '403': description: Forbidden '500':=
+ description: Internal server error components: schemas: GetDecoratorRespon=
+seDTO: type: object properties: id: type: integer description: The ID of th=
+e decorator name: type: string description: The name of the decorator # Add=
+ other properties as needed
+ </template>
+ <section>
+ </section>
+ <link rel=3D"stylesheet" href=3D"https://wiki.mypaytm.com/download/attachm=
+ents/171230574/swagger-ui.min.css">
+ <script src=3D"https://wiki.mypaytm.com/download/attachments/171230574/swa=
+gger-ui-bundle.min.js">//<![CDATA[
+
+
+//]]>
+</script>
+ <script src=3D"https://wiki.mypaytm.com/download/attachments/171230574/swa=
+gger-ui-standalone-preset.min.js">//<![CDATA[
+
+
+//]]>
+</script>
+ <script type=3D"text/javascript">//<![CDATA[
+
+(function(){
+    let parent =3D document.currentScript.parentElement
+    let doc =3D parent.getElementsByTagName('template')[0].content.textCont=
+ent
+    let url =3D 'data:text/plain;charset=3DUTF-8;base64, ' + btoa(unescape(=
+encodeURIComponent(doc)))
+    let section =3D parent.getElementsByTagName('section')[0]
+        SwaggerUIBundle({
+            url: url,
+            domNode: section,
+            presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+            ],
+            layout: "StandaloneLayout"
+        })
+})()
+
+//]]>
+</script>
+</div>
+<p><br></p>
+<h1 id=3D"StorefrontAdminAPI-APItofetchallwidgettypes"><span style=3D"color=
+:#37471f;">API to fetch all widget types</span></h1>
+<p><strong>GET</strong>: /v1/merchant/:merchant_id/:entity_type/decoratorvi=
+ew/types</p>
+<p><strong>Ex</strong>. /v1/merchant/0/category/decoratorview/types</p>
+<h1 id=3D"StorefrontAdminAPI-APItofetchallviewtypeswhicharemanagedbyCT"><sp=
+an style=3D"color:#37471f;">API to fetch all view types which are managed b=
+y CT</span></h1>
+<p><strong>GET</strong>: /v1/merchant/:merchant_id/decorator/getViewTypes</=
+p>
+<p><strong>Ex</strong>. /v1/merchant/0/decorator/getViewTypes<br><br><stron=
+g>Response</strong>: response is an array of objects where each object has =
+view type data<br><strong>Ex.</strong><br>
+  [{<br>
+  &nbsp; &nbsp; "id": 16,<br>
+  &nbsp; &nbsp; "type": "banner-3xn",<br>
+  &nbsp; &nbsp; "name": "banner-3xn",<br>
+  &nbsp; &nbsp; "label": "RECTANGLE BANNER(3xn)",<br>
+  &nbsp; &nbsp; "status": 1,<br>
+  &nbsp; &nbsp; "config": {<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; "img_dim": [<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "w": 460,<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "h": 346,<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "op": "eq"<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "w": 460,<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "h": 460,<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "op": "lte"<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; ]<br>
+  &nbsp; &nbsp; }<br>
+  }]<br><br>
+  img_dim in config in an array of multiple validations of image dimensions=
+. Only one of the validations needs to be true.<br>
+  Empty img_dim array =3D&gt; any image size is allowed.<br>
+  w is width, h is height and op is the operator used for validation of bot=
+h width and height.<br>
+  Possible values for op: eq, lte, gte<br><br>
+  For eg, in the sample response above, the following validations are prese=
+nt:<br>
+  First validation: w equal to 460 AND h equal to 346<br>
+  Second validation: w less than equal to 460 AND h less than equal to 460<=
+/p>
+<h1 id=3D"StorefrontAdminAPI-ListofViewsinaStorefront">List of Views in a S=
+torefront</h1>
+<p><strong>Get</strong>:&nbsp;/v1/merchant/0/category/:entity_associated_wi=
+th/decorator/:decorator_id/view</p>
+<p><strong>Params</strong>:&nbsp;</p>
+<ol>
+ <li>entity_associated_with:&nbsp;entity_associated_with of&nbsp;getDecorat=
+ors API</li>
+ <li>decorator_id: Storefront Id</li>
+</ol>
+<p><strong>Query</strong>:</p>
+<ol>
+ <li>status=3D1 (Active Views)</li>
+ <li>status=3D0 (Inactive Views)</li>
+ <li>without status (ALL)</li>
+ <li>manage_by_engage=3D1 (Views with manage_by_engage flag on)</li>
+ <li>manage_by_engage=3D0 (Views with manage_by_engage_flag off)</li>
+ <li>without manage_by_engage (ALL)</li>
+</ol>
+<p><strong>Note</strong>: <span style=3D"color:#50253f;">"</span><span clas=
+s=3D"k" style=3D"color:#172b4d;">is_recommended</span><span style=3D"color:=
+#50253f;">":&nbsp;</span><span class=3D"bl" style=3D"color:#0055cc;">true&n=
+bsp;</span>for personalised view.</p>
+<p><br></p>
+<h1 id=3D"StorefrontAdminAPI-ListofItems(Banners)inaView">List of Items (Ba=
+nners) in a View</h1>
+<p><strong>GET</strong>:&nbsp;/v1/merchant/0/category/:entity_associated_wi=
+th/decorator/:decorator_id/view/:view_id/view_item</p>
+<p><strong>Params</strong>:&nbsp;</p>
+<ol>
+ <li>entity_associated_with:&nbsp;entity_associated_with of&nbsp;getDecorat=
+ors API</li>
+ <li>decorator_id: Storefront Id</li>
+ <li>view_id: view_id</li>
+</ol>
+<p><strong>Note:&nbsp;</strong>It will return all banners. This API is used=
+ on Seller Panel.</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+ <div class=3D"codeHeader panelHeader pdl hide-border-bottom" style=3D"bord=
+er-bottom-width: 1px;">
+  <b class=3D"code-title">Sample Response</b><span class=3D"collapse-source=
+ expand-control" style=3D"display:none;"><span class=3D"expand-control-icon=
+ icon">&nbsp;</span><span class=3D"expand-control-text">Expand source</span=
+></span><span class=3D"collapse-spinner-wrapper"></span>
+ </div>
+ <div class=3D"codeContent panelContent pdl hide-toolbar">
+  <pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"bru=
+sh: js; gutter: false; collapse: true">[
+   {
+      "id":1286225,
+      "priority":0,
+      "name":"Scan Any QR",
+      "title":"Scan Any QR",
+      "subtitle":"",
+      "image_url":"https://assetscdn1.paytm.com/images/catalog/view_item/12=
+86225/1673844325908.png",
+      "alt_image_url":null,
+      "url_info":"homepage_scan",
+      "url_type":"homepage_scan",
+      "url":"paytmmp://pay-scanqr",
+      "source":"storefront",
+      "item_id":0,
+      "ga_category":"Others",
+      "start_time":null,
+      "end_time":null,
+      "cta":null,
+      "status":1,
+      "platform":[
+         "HTML5",
+         "ANDROID",
+         "IOS"
+      ],
+      "site":[
+         "PAYTM",
+         "PAYTMMALL"
+      ],
+      "valid_upto":null,
+      "valid_from":null,
+      "description":"",
+      "attributes":{
+        =20
+      },
+      "layout":{
+         "label":""
+      },
+      "seourl":"paytmmp://pay-scanqr"
+   }
+]</pre>
+ </div>
+</div>
+<p><br></p>
+<p><br></p>
+<div class=3D"openapi-widget">
+ <template>
+  openapi: 3.0.0 info: title: Storefront Admin API description: API for man=
+aging storefront decorators version: 1.0.0 paths: /decorators/{merchantId}/=
+{entityType}: get: summary: Get Decorators description: Retrieve a list of =
+decorators based on various filters tags: - Decorators parameters: - name: =
+merchantId in: path required: true schema: type: string description: The ID=
+ of the merchant - name: entityType in: path required: true schema: type: s=
+tring description: The type of the entity - name: id in: query required: fa=
+lse schema: type: integer description: The ID of the decorator - name: limi=
+t in: query required: false schema: type: string description: The limit for=
+ pagination - name: page in: query required: false schema: type: string des=
+cription: The page number for pagination - name: namePartial in: query requ=
+ired: false schema: type: string description: Partial name for filtering de=
+corators - name: orderBy in: query required: false schema: type: string des=
+cription: Order by field - name: name in: query required: false schema: typ=
+e: string description: Name of the decorator - name: orderColumn in: query =
+required: false schema: type: string description: Column to order by - name=
+: viewId in: query required: false schema: type: integer description: The v=
+iew ID - name: watchers in: query required: false schema: type: string desc=
+ription: Watchers of the decorator - name: watcherPartial in: query require=
+d: false schema: type: string description: Partial watcher name for filteri=
+ng - name: entity_associated_with in: query required: false schema: type: s=
+tring description: Entity associated with the decorator - name: headers in:=
+ header required: false schema: type: object additionalProperties: type: st=
+ring description: Additional headers responses: '200': description: A list =
+of decorators content: application/json: schema: type: array items: $ref: '=
+#/components/schemas/GetDecoratorResponseDTO' '400': description: Bad reque=
+st '401': description: Unauthorized '403': description: Forbidden '500': de=
+scription: Internal server error components: schemas: GetDecoratorResponseD=
+TO: type: object properties: id: type: integer description: The ID of the d=
+ecorator name: type: string description: The name of the decorator # Add ot=
+her properties as needed
+ </template>
+ <section>
+ </section>
+ <link rel=3D"stylesheet" href=3D"https://wiki.mypaytm.com/download/attachm=
+ents/171230574/swagger-ui.min.css">
+ <script src=3D"https://wiki.mypaytm.com/download/attachments/171230574/swa=
+gger-ui-bundle.min.js">//<![CDATA[
+
+
+//]]>
+</script>
+ <script src=3D"https://wiki.mypaytm.com/download/attachments/171230574/swa=
+gger-ui-standalone-preset.min.js">//<![CDATA[
+
+
+//]]>
+</script>
+ <script type=3D"text/javascript">//<![CDATA[
+
+(function(){
+    let parent =3D document.currentScript.parentElement
+    let doc =3D parent.getElementsByTagName('template')[0].content.textCont=
+ent
+    let url =3D 'data:text/plain;charset=3DUTF-8;base64, ' + btoa(unescape(=
+encodeURIComponent(doc)))
+    let section =3D parent.getElementsByTagName('section')[0]
+        SwaggerUIBundle({
+            url: url,
+            domNode: section,
+            presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+            ],
+            layout: "StandaloneLayout"
+        })
+})()
+
+//]]>
+</script>
+</div>
+<p><br></p>
+<h1 id=3D"StorefrontAdminAPI-ListofVisibilityOptions">List of Visibility Op=
+tions</h1>
+<p><strong>GET</strong>:&nbsp;/v1/merchant/0/decoratorview/getVisibility</p=
+>
+<p><strong>Key</strong>:</p>
+<ol>
+ <li>Site: Paytm or Paytmmall</li>
+ <li>Platform: Web, Android, iOS, HTML5, Windows</li>
+ <li>Platform Version: Old View or New View<br><br></li>
+</ol>
+<h1 id=3D"StorefrontAdminAPI-ListofItemTypes">List of Item Types</h1>
+<p><strong>GET</strong>:&nbsp;/v1/merchant/0/category/decoratorviewitem/typ=
+es</p>
+<p><strong>Key</strong>:&nbsp;</p>
+<ol>
+ <li><span style=3D"color:#172b4d;">item_id_required: <strong>item_id</stro=
+ng> is requite fro those types</span></li>
+ <li><span style=3D"color:#172b4d;">else require&nbsp;<strong>url</strong> =
+key.</span><span style=3D"color:#172b4d;"><br></span></li>
+</ol>
+<p><span style=3D"color:#172b4d;">&nbsp;</span></p>
+<h1 id=3D"StorefrontAdminAPI-CreateItem(CalledfromSFadminpanel)"><span styl=
+e=3D"color:#172b4d;">Create Item (Called from SF admin panel)</span></h1>
+<p><strong>POST</strong>:&nbsp;/v1/merchant/0/category/:entity_associated_w=
+ith/decorator/:decorator_id/view/:view_id/view_item</p>
+<p><strong>Params</strong>:&nbsp;</p>
+<ol>
+ <li>entity_associated_with:&nbsp;entity_associated_with of&nbsp;getDecorat=
+ors API</li>
+ <li>decorator_id: Storefront Id</li>
+ <li>view_id: view_id</li>
+</ol>
+<p><strong>Allowed Fields to Create</strong>: ['name', 'subname', 'view_id'=
+, 'type', 'platform', 'site', 'item_type' , 'title', 'subtitle', 'status', =
+'image', 'alternate_image', 'priority', 'url', 'layout', 'metadata', 'attri=
+butes', 'valid_upto', 'valid_from', 'start_time', 'end_time', 'schedule', '=
+category', 'sub_category', 'ga_category', 'upi_profile_tag', 'description',=
+ 'acsblty' (acsblty:{"lbl":"","hnt":""}), =E2=80=99custom_fields', custom_p=
+roperties' (custom_properties:[{"name":"","type":"string","value":""}])' , =
+'cta', 'dark_info' (dark_info:{image_url : "", alt_image_url : ""}</p>
+<p><strong>.&nbsp; &nbsp; &nbsp; Note:</strong></p>
+<ol>
+ <li>Max allowed size for image in payload is 5 MB (including all the image=
+s in payload)</li>
+ <li>Supported date formats for keys like <span>valid_from,</span><span>val=
+id_upto are <strong>yyyy-MM-dd'T'HH:mm:ss, yyyy-MM-dd HH:mm:ss, yyyy-MM-dd'=
+T'HH:mm</strong></span></li>
+ <li>Supported format for platform field is "ANDROID,IOS"</li>
+</ol>
+<p><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+ <div class=3D"codeHeader panelHeader pdl hide-border-bottom" style=3D"bord=
+er-bottom-width: 1px;">
+  <b class=3D"code-title">Sample request</b><span class=3D"collapse-source =
+expand-control" style=3D"display:none;"><span class=3D"expand-control-icon =
+icon">&nbsp;</span><span class=3D"expand-control-text">Expand source</span>=
+</span><span class=3D"collapse-spinner-wrapper"></span>
+ </div>
+ <div class=3D"codeContent panelContent pdl hide-toolbar">
+  <pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"bru=
+sh: bash; gutter: false; collapse: true">{
+    "name": "Test Banner",
+    "subname": "Test subname",
+    "type": "grid",
+    "platform": "WEB,HTML5,ANDROID,IOS",
+    "site": "PAYTM",
+    "item_type": "icon",
+    "item_id": "7177",
+    "status": "1",
+    "title": "Test",
+    "subtitle": "Test",
+    "priority": 31,
+    "url": "www.paytm.com",
+    "metadata": "{}",
+    "custom_fields": {
+        "group_view_item_id": 123
+    },
+    "ga_category": "Others",
+    "attributes": {
+        "tip_uid": "123",
+        "dark_info": {
+            "layout": {
+                "label": "test label",
+                "label_text_color": "#000000",
+                "label_bgcolor": "#000000",
+                "text_font": "18",
+                "text_alignment": "left",
+                "text_color": "#000000",
+                "border_color": "#000000"
+            },
+            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_=
+item/1728542582834.jpeg",
+            "alt_image_url": "https://assetscdn1.paytm.com/images/catalog/v=
+iew_item/1728542582860.jpeg"
+        },
+        "dark_cta_info": {
+            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_=
+item/1728542582815.jpeg"
+        },
+        "tag": "test tag"
+    },
+    "valid_from": "2024-09-22 11: 28: 00",
+    "valid_upto": "2024-11-30 11: 28: 00",
+    "start_time": "2024-09-22 11: 28: 00",
+    "end_time": "2024-09-22 11: 28: 00",
+    "schedule": 1,
+    "category": "PAYTM-Money",
+    "sub_category": "PAYTM-Money",
+    "upi_profile_tag": "mobile",
+    "description": "test desc",
+    "acsblty": {
+        "lbl": "test label",
+        "hnt": "test hint"
+    },
+    "custom_properties": [
+        {
+            "name": "test key",
+            "type": "string",
+            "value": "test value"
+        }
+    ],
+    "cta": {
+        "label": "test cta label",
+        "url": "www.google.com",
+        "aligned": "left",
+        "url_type": "embed",
+        "label_text_color": "#000000",
+        "bg_color": "#000000",
+        "tag": "testing tag",
+        "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item=
+/1728542582790.jpeg",
+        "text_color": "#000000",
+        "icon_image_url": "https://assetscdn1.paytm.com/images/catalog/view=
+_item/1728542582838.jpeg"
+    }
+}</pre>
+ </div>
+</div>
+<p class=3D"p2"><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+ <div class=3D"codeHeader panelHeader pdl hide-border-bottom" style=3D"bord=
+er-bottom-width: 1px;">
+  <b class=3D"code-title">Request format (For Image &amp; Alternate Image)<=
+/b><span class=3D"collapse-source expand-control" style=3D"display:none;"><=
+span class=3D"expand-control-icon icon">&nbsp;</span><span class=3D"expand-=
+control-text">Expand source</span></span><span class=3D"collapse-spinner-wr=
+apper"></span>
+ </div>
+ <div class=3D"codeContent panelContent pdl hide-toolbar">
+  <pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"bru=
+sh: bash; gutter: false; collapse: true">{=20
+=09image:&nbsp;
+
+&nbsp;&nbsp; {=20
+=09fieldname: 'image',
+
+&nbsp;&nbsp; &nbsp; originalname: '18582456_1335829899832663_36261355217687=
+60252_n.jpg',
+
+&nbsp;&nbsp; &nbsp; encoding: '7bit',
+
+&nbsp;&nbsp; &nbsp; mimetype: 'image/jpeg',
+
+&nbsp;&nbsp; &nbsp; destination: '/tmp',
+
+&nbsp;&nbsp; &nbsp; filename: '9d373dc17204cadb11445a6bf59da6c2',
+
+&nbsp;&nbsp; &nbsp; path: '/tmp/9d373dc17204cadb11445a6bf59da6c2',
+
+&nbsp;&nbsp; &nbsp; size: 43327,
+
+&nbsp;&nbsp; &nbsp; type: 'image/jpeg',
+
+&nbsp;&nbsp; &nbsp; name: '18582456_1335829899832663_3626135521768760252_n.=
+jpg',
+
+&nbsp;&nbsp; &nbsp; originalFilename: '18582456_1335829899832663_3626135521=
+768760252_n.jpg'=20
+=09}
+ }</pre>
+ </div>
+</div>
+<h1 id=3D"StorefrontAdminAPI-UpdateItem(CalledfromSFadminpanel)">Update Ite=
+m (<span style=3D"color:#172b4d;">Called from SF admin panel</span>)</h1>
+<p><strong>POST</strong>:&nbsp;/v1/merchant/0/category/:entity_associated_w=
+ith/decorator/:decorator_id/view/:view_id/view_item</p>
+<p><strong>Params</strong>:&nbsp;</p>
+<ol>
+ <li>entity_associated_with:&nbsp;entity_associated_with of&nbsp;getDecorat=
+ors API</li>
+ <li>decorator_id: Storefront Id</li>
+ <li>view_id: view_id</li>
+</ol>
+<p><strong>Allowed Fields to Create</strong>: ['name', 'subname', 'view_id'=
+, 'type', 'platform', 'site', 'item_type' , 'title', 'subtitle', 'status', =
+'image', 'alternate_image', 'priority', 'url', 'layout', 'metadata', 'attri=
+butes', 'valid_upto', 'valid_from', 'start_time', 'end_time', 'schedule', '=
+category', 'sub_category', 'ga_category', 'upi_profile_tag', 'description',=
+ 'acsblty' (acsblty:{"lbl":"","hnt":""}), =E2=80=99custom_fields', custom_p=
+roperties' (custom_properties:[{"name":"","type":"string","value":""}])' , =
+'cta', 'dark_info' (dark_info:{image_url : "", alt_image_url : ""})]</p>
+<p><strong>&nbsp; &nbsp; &nbsp; Note:</strong></p>
+<ol>
+ <li><span style=3D"color:#c9372c;"><span style=3D"color:#164555;"><span st=
+yle=3D"color:#c9372c;"><span style=3D"color:#164555;">Send image, alternate=
+_image as "null" to remove while update from API</span></span></span></span=
+></li>
+ <li><span style=3D"color:#c9372c;"><span style=3D"color:#164555;"><span st=
+yle=3D"color:#c9372c;"><span style=3D"color:#164555;">Don't sent <span styl=
+e=3D"color:#c9372c;"><span style=3D"color:#164555;"><span style=3D"color:#c=
+9372c;"><span style=3D"color:#164555;">image, alternate_image in payload if=
+ you do not want to update the existing state.</span></span></span></span><=
+/span></span></span></span></li>
+ <li>Max allowed size for image in payload is 5 MB (including all the image=
+s in payload)</li>
+ <li>Supported date formats for keys like <span>valid_from,</span><span>val=
+id_upto are <strong>yyyy-MM-dd'T'HH:mm:ss, yyyy-MM-dd HH:mm:ss, yyyy-MM-dd'=
+T'HH:mm</strong></span></li>
+ <li>Supported format for platform field is "ANDROID,IOS"</li>
+</ol>
+<p><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+ <div class=3D"codeHeader panelHeader pdl hide-border-bottom" style=3D"bord=
+er-bottom-width: 1px;">
+  <b class=3D"code-title">Sample request</b><span class=3D"collapse-source =
+expand-control" style=3D"display:none;"><span class=3D"expand-control-icon =
+icon">&nbsp;</span><span class=3D"expand-control-text">Expand source</span>=
+</span><span class=3D"collapse-spinner-wrapper"></span>
+ </div>
+ <div class=3D"codeContent panelContent pdl hide-toolbar">
+  <pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"bru=
+sh: bash; gutter: false; collapse: true">{
+    "name": "Test Banner",
+    "subname": "Test subname",
+    "type": "grid",
+    "platform": "WEB,HTML5,ANDROID,IOS",
+    "site": "PAYTM",
+    "item_type": "icon",
+    "item_id": "7177",
+    "status": "1",
+    "title": "Test",
+    "subtitle": "Test",
+    "priority": 31,
+    "url": "www.paytm.com",
+    "metadata": "{}",
+    "custom_fields": {
+        "group_view_item_id": 123
+    },
+    "ga_category": "Others",
+    "attributes": {
+        "tip_uid": "123",
+        "dark_info": {
+            "layout": {
+                "label": "test label",
+                "label_text_color": "#000000",
+                "label_bgcolor": "#000000",
+                "text_font": "18",
+                "text_alignment": "left",
+                "text_color": "#000000",
+                "border_color": "#000000"
+            },
+            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_=
+item/1728542582834.jpeg",
+            "alt_image_url": "https://assetscdn1.paytm.com/images/catalog/v=
+iew_item/1728542582860.jpeg"
+        },
+        "dark_cta_info": {
+            "image_url": "https://assetscdn1.paytm.com/images/catalog/view_=
+item/1728542582815.jpeg"
+        },
+        "tag": "test tag"
+    },
+    "valid_from": "2024-09-22 11: 28: 00",
+    "valid_upto": "2024-11-30 11: 28: 00",
+    "start_time": "2024-09-22 11: 28: 00",
+    "end_time": "2024-09-22 11: 28: 00",
+    "schedule": 1,
+    "category": "PAYTM-Money",
+    "sub_category": "PAYTM-Money",
+    "upi_profile_tag": "mobile",
+    "description": "test desc",
+    "acsblty": {
+        "lbl": "test label",
+        "hnt": "test hint"
+    },
+    "custom_properties": [
+        {
+            "name": "test key",
+            "type": "string",
+            "value": "test value"
+        }
+    ],
+    "cta": {
+        "label": "test cta label",
+        "url": "www.google.com",
+        "aligned": "left",
+        "url_type": "embed",
+        "label_text_color": "#000000",
+        "bg_color": "#000000",
+        "tag": "testing tag",
+        "image_url": "https://assetscdn1.paytm.com/images/catalog/view_item=
+/1728542582790.jpeg",
+        "text_color": "#000000",
+        "icon_image_url": "https://assetscdn1.paytm.com/images/catalog/view=
+_item/1728542582838.jpeg"
+    }
+}</pre>
+ </div>
+</div>
+<p class=3D"p1"><br></p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+ <div class=3D"codeHeader panelHeader pdl hide-border-bottom" style=3D"bord=
+er-bottom-width: 1px;">
+  <b class=3D"code-title">Request format (For Image &amp; Alternate Image)<=
+/b><span class=3D"collapse-source expand-control" style=3D"display:none;"><=
+span class=3D"expand-control-icon icon">&nbsp;</span><span class=3D"expand-=
+control-text">Expand source</span></span><span class=3D"collapse-spinner-wr=
+apper"></span>
+ </div>
+ <div class=3D"codeContent panelContent pdl hide-toolbar">
+  <pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"bru=
+sh: bash; gutter: false; collapse: true">{=20
+image:=20
+
+&nbsp;&nbsp; {=20
+=09 fieldname:&nbsp;'image',
+
+&nbsp;&nbsp; &nbsp; originalname:&nbsp;'18582456_1335829899832663_362613552=
+1768760252_n.jpg',
+
+&nbsp;&nbsp; &nbsp; encoding:&nbsp;'7bit',
+
+&nbsp;&nbsp; &nbsp; mimetype:&nbsp;'image/jpeg',
+
+&nbsp;&nbsp; &nbsp; destination:&nbsp;'/tmp',
+
+&nbsp;&nbsp; &nbsp; filename:&nbsp;'9d373dc17204cadb11445a6bf59da6c2',
+
+&nbsp;&nbsp; &nbsp; path:&nbsp;'/tmp/9d373dc17204cadb11445a6bf59da6c2',
+
+&nbsp;&nbsp; &nbsp; size:&nbsp;43327,
+
+&nbsp;&nbsp; &nbsp; type:&nbsp;'image/jpeg',
+
+&nbsp;&nbsp; &nbsp; name:&nbsp;'18582456_1335829899832663_36261355217687602=
+52_n.jpg',
+
+&nbsp;&nbsp; &nbsp; originalFilename:&nbsp;'18582456_1335829899832663_36261=
+35521768760252_n.jpg'&nbsp;
+=09}
+ }</pre>
+ </div>
+</div>
+<p class=3D"p2"><br></p>
+<h1 id=3D"StorefrontAdminAPI-RemoveItem(CalledfromStorefrontAdmin)">Remove =
+Item (Called from Storefront Admin)</h1>
+<p><strong>DELETE</strong>: /v1/merchant/0/category/:entity_associated_with=
+/decorator/:decorator_id/view/:view_id/view_item/:item_id</p>
+<p><strong>Params</strong>:&nbsp;</p>
+<ol>
+ <li>entity_associated_with:&nbsp;entity_associated_with of&nbsp;getDecorat=
+ors API</li>
+ <li>decorator_id: Storefront Id</li>
+ <li>view_id: view_id</li>
+ <li>item_id: banner id to delete</li>
+</ol>
+<p><strong>Curl</strong>:</p>
+<p class=3D"p2">curl -XDELETE '<a href=3D"https://storefrontadmin-staging.p=
+aytm.com/v1/merchant/0/category/62982/decorator/51/view/45546/view_item/195=
+952" class=3D"external-link" rel=3D"nofollow">https://storefrontadmin-stagi=
+ng.paytm.com/v1/merchant/0/category/62982/decorator/51/view/45546/view_item=
+/195952</a>'</p>
+<h1 id=3D"StorefrontAdminAPI-CreateBanner(CalledfromWidgetServe&amp;Adspane=
+l)"><span style=3D"color:#172b4d;">Create Banner (Called from Widget Serve =
+&amp; Ads panel)</span></h1>
+<p><strong>POST</strong>:&nbsp;<span style=3D"color:#172b4d;">"/v1/merchant=
+/:merchant_id/decorator/view_type/:view_type/createItemsPool"</span></p>
+<p><strong>Params</strong>:&nbsp;</p>
+<ol>
+ <li>entity_associated_with:&nbsp;entity_associated_with of&nbsp;getDecorat=
+ors API</li>
+ <li>decorator_id: Storefront Id</li>
+ <li>view_id: view_id</li>
+</ol>
+<p><strong>Allowed Fields to Create</strong>: ['name', 'view_id', 'type', '=
+title', 'subtitle', 'status', 'image', 'alternate_image', 'priority', 'url'=
+, 'layout', 'platform', 'metadata', 'valid_upto', 'valid_from',&nbsp; 'site=
+', 'ga_category', 'cta', 'dark_info' (dark_info:{image_url : "", alt_image_=
+url : ""})]</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+ <div class=3D"codeHeader panelHeader pdl hide-border-bottom" style=3D"bord=
+er-bottom-width: 1px;">
+  <b class=3D"code-title">Sample request</b><span class=3D"collapse-source =
+expand-control" style=3D"display:none;"><span class=3D"expand-control-icon =
+icon">&nbsp;</span><span class=3D"expand-control-text">Expand source</span>=
+</span><span class=3D"collapse-spinner-wrapper"></span>
+ </div>
+ <div class=3D"codeContent panelContent pdl hide-toolbar">
+  <pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"bru=
+sh: bash; gutter: false; collapse: true">{
+    "name": "OLA",
+    "view_id": 427764,
+    "type": "external",
+    "title": "test title",
+    "subtitle": "subtitle test",
+    "priority": "1",
+    "url": "https://www.olaelectric.com/biggest-ola-season-sale?utm_source=
+=3Dpaytm&amp;utm_medium=3Dcpm_paytm_oct&amp;utm_campaign=3Dpaytm_oct_awaren=
+ess_campaign",
+    "layout": "{\"label\":\"Test\"}",
+    "platform": "ANDROID,IOS,WEB,HTML5,WINDOWS",
+    "metadata": "{\"category_weights\":[{\"weight\":100,\"category_id\":\"6=
+791\"}],\"group_tag\":\"ads_1\",\"is_fallback\":false}",
+    "valid_upto": "2024-10-31T18:29:00Z",
+    "valid_from": "2024-10-08T06:41:00Z",
+    "site": "PAYTM",
+    "ga_category": "Mobile Prepaid",
+    "cta":"{\"bg_color\":\"#000000\",\"url_type\":\"embed\",\"image_url\":\=
+"https://assetscdn1.paytm.com/images/catalog/view_item/1721888437539.jpeg\"=
+,\"icon_image_url\":\"https://assetscdn1.paytm.com/images/catalog/view_item=
+/1721888437558.jpeg\",\"label\":\"test label\",\"aligned\":\"left\",\"tag\"=
+:\"test tag\",\"text_color\":\"#000000\",\"label_text_color\":\"#000000\",\=
+"url\":\"www.google.com\"}",
+    "dark_info": "{\"image_url\":\"testCta.png\",\"alt_image_url\":\"abc.te=
+st\",\"layout\":{\"label\":\"Dark\",\"label_text_color\":\"#b95b5b\",\"labe=
+l_bgcolor\":\"#ec4646\"}}",
+    "src": "ads",
+    "status": "1",
+    "custom_fields": "{\"group_view_id\":[123]}"
+}</pre>
+ </div>
+</div>
+<p><strong>Note:</strong></p>
+<ol>
+ <li>dark_info is a stringified json &amp; need to provide the dark image u=
+rls directly not the file</li>
+ <li>For sending the image urls of dark images you can consider hitting the=
+ upload image api of storefront admin present at the bottom of this wiki</l=
+i>
+ <li><span style=3D"color:#c9372c;"><span style=3D"color:#164555;"><span st=
+yle=3D"color:#c9372c;"><span style=3D"color:#164555;">Currently sending the=
+ normal image in url format is not supported ( At storefront end currently =
+normal image is expecting an image file &amp; dark images as urls )</span><=
+/span></span></span></li>
+ <li>Max allowed size for image in payload is 5 MB (including all the image=
+s in payload)</li>
+ <li>layout field being passed in the dark_info should contain all the fiel=
+ds which are being passed for light theme layout, when theme =3D dark the f=
+ields at dark_info layout will be used instead of normal layout&nbsp; &nbsp=
+; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+ <li>Supported date formats for keys like <span>valid_from,</span><span>val=
+id_upto are <strong>yyyy-MM-dd'T'HH:mm:ss, yyyy-MM-dd HH:mm:ss, yyyy-MM-dd'=
+T'HH:mm</strong></span></li>
+ <li>Supported format for platform field is "ANDROID,IOS"</li>
+</ol>
+<p><br></p>
+<div id=3D"expander-2064877801" class=3D"expand-container">
+ <div role=3D"heading" aria-level=3D"6" id=3D"expander-control-2064877801" =
+class=3D"expand-control">
+  <button type=3D"button" id=3D"expand-button-2064877801" class=3D"aui-butt=
+on aui-button-link aui-button-link-icon-text" aria-expanded=3D"true" aria-c=
+ontrols=3D"expander-content-2064877801"><span class=3D"expand-icon aui-icon=
+ aui-icon-small aui-iconfont-chevron-down" aria-hidden=3D"true"></span><spa=
+n class=3D"expand-control-text conf-macro-render">Request format (For Image=
+)</span></button>
+ </div>
+ <div role=3D"region" id=3D"expander-content-2064877801" class=3D"expand-co=
+ntent" aria-labelledby=3D"expand-button-2064877801">
+  <p><span style=3D"color:#172b4d;">{ image: </span></p>
+  <p><span style=3D"color:#172b4d;">{ fieldname: 'image',</span></p>
+  <p><span style=3D"color:#172b4d;">&nbsp;&nbsp; &nbsp; originalname: '1858=
+2456_1335829899832663_3626135521768760252_n.jpg',</span><br><br><span style=
+=3D"color:#172b4d;">&nbsp;&nbsp; &nbsp; encoding: '7bit',</span><br><br><sp=
+an style=3D"color:#172b4d;">&nbsp;&nbsp; &nbsp; mimetype: 'image/jpeg',</sp=
+an><br><br><span style=3D"color:#172b4d;">&nbsp;&nbsp; &nbsp; destination: =
+'/tmp',</span><br><br><span style=3D"color:#172b4d;">&nbsp;&nbsp; &nbsp; fi=
+lename: '9d373dc17204cadb11445a6bf59da6c2',</span><br><br><span style=3D"co=
+lor:#172b4d;">&nbsp;&nbsp; &nbsp; path: '/tmp/9</span><span style=3D"color:=
+#172b4d;">d373dc17204cadb11445a6bf59da6c2',</span><br><br><span style=3D"co=
+lor:#172b4d;">&nbsp;&nbsp; &nbsp; size: 43327</span><span style=3D"color:#1=
+72b4d;">,</span><br><br><span style=3D"color:#172b4d;">&nbsp;&nbsp; &nbsp; =
+type: 'image/jpeg',</span><br><br><span style=3D"color:#172b4d;">&nbsp;&nbs=
+p; &nbsp; name: '18582456_1335829899832663_3626135521768760252_n.jpg',</spa=
+n><br><br><span style=3D"color:#172b4d;">&nbsp;&nbsp; &nbsp; originalFilena=
+me: '18582456_1335829899832663_3626135521768760252_n.jpg'</span><br><span s=
+tyle=3D"color:#172b4d;"> }</span><br><span style=3D"color:#172b4d;">}</span=
+></p>
+ </div>
+</div>
+<p class=3D"p2"><br></p>
+<h1 id=3D"StorefrontAdminAPI-UpdateBanner(CalledfromWidgetServe&amp;Adspane=
+l)">Update Banner (<span style=3D"color:#172b4d;">Called from </span><span =
+style=3D"color:#172b4d;">Widget Serve &amp; Ads panel</span>)</h1>
+<p><strong>POST</strong>:&nbsp;<span style=3D"color:#172b4d;">"/v1/merchant=
+/:merchant_id/decorator/view_type/updateBanner/:bannerId",</span></p>
+<p><strong>Params</strong>:&nbsp;</p>
+<ol>
+ <li>entity_associated_with:&nbsp;entity_associated_with of&nbsp;getDecorat=
+ors API</li>
+ <li>decorator_id: Storefront Id</li>
+ <li>view_id: view_id</li>
+</ol>
+<p><strong>Allowed Fields to Update</strong>: ['name', 'view_id', 'type', '=
+title', 'subtitle', 'status', 'image', 'alternate_image', 'priority', 'url'=
+, 'layout', 'platform', 'metadata', 'valid_upto', 'valid_from',&nbsp; 'site=
+', 'ga_category', 'cta', 'dark_info' (dark_info:{image_url : "", alt_image_=
+url : ""})]</p>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+ <div class=3D"codeHeader panelHeader pdl hide-border-bottom" style=3D"bord=
+er-bottom-width: 1px;">
+  <b class=3D"code-title">Sample request</b><span class=3D"collapse-source =
+expand-control" style=3D"display:none;"><span class=3D"expand-control-icon =
+icon">&nbsp;</span><span class=3D"expand-control-text">Expand source</span>=
+</span><span class=3D"collapse-spinner-wrapper"></span>
+ </div>
+ <div class=3D"codeContent panelContent pdl hide-toolbar">
+  <pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"bru=
+sh: bash; gutter: false; collapse: true">{
+    "name": "OLA",
+    "view_id": 427764,
+    "type": "external",
+    "title": "test title",
+    "subtitle": "subtitle test",
+    "priority": "1",
+    "url": "https://www.olaelectric.com/biggest-ola-season-sale?utm_source=
+=3Dpaytm&amp;utm_medium=3Dcpm_paytm_oct&amp;utm_campaign=3Dpaytm_oct_awaren=
+ess_campaign",
+    "layout": "{\"label\":\"Test\"}",
+    "platform": "ANDROID,IOS,WEB,HTML5,WINDOWS",
+    "metadata": "{\"category_weights\":[{\"weight\":100,\"category_id\":\"6=
+791\"}],\"group_tag\":\"ads_1\",\"is_fallback\":false}",
+    "valid_upto": "2024-10-31T18:29:00Z",
+    "valid_from": "2024-10-08T06:41:00Z",
+    "site": "PAYTM",
+    "ga_category": "Mobile Prepaid",
+    "cta": "{\"bg_color\":\"#000000\",\"url_type\":\"embed\",\"image_url\":=
+\"https://assetscdn1.paytm.com/images/catalog/view_item/1721888437539.jpeg\=
+",\"icon_image_url\":\"https://assetscdn1.paytm.com/images/catalog/view_ite=
+m/1721888437558.jpeg\",\"label\":\"test label\",\"aligned\":\"left\",\"tag\=
+":\"test tag\",\"text_color\":\"#000000\",\"label_text_color\":\"#000000\",=
+\"url\":\"www.google.com\"}",
+    "dark_info": "{\"image_url\":\"testCta.png\",\"alt_image_url\":\"abc.te=
+st\",\"layout\":{\"label\":\"Dark\",\"label_text_color\":\"#b95b5b\",\"labe=
+l_bgcolor\":\"#ec4646\"}}",
+    "src": "ads",
+    "status": "1",
+    "custom_fields": "{\"group_view_id\":[123]}"
+}</pre>
+ </div>
+</div>
+<p><strong>&nbsp; &nbsp; &nbsp; &nbsp;Note:</strong></p>
+<ol>
+ <li><span style=3D"color:#c9372c;"><span style=3D"color:#164555;"><span st=
+yle=3D"color:#c9372c;"><span style=3D"color:#164555;">dark_info is a string=
+ified json &amp; need to provide the dark image urls directly not the file<=
+/span></span></span></span></li>
+ <li><span style=3D"color:#c9372c;"><span style=3D"color:#164555;"><span st=
+yle=3D"color:#c9372c;"><span style=3D"color:#164555;">For sending the image=
+ urls of dark images you can consider hitting the upload image api of store=
+front admin present at the bottom of this wiki</span></span></span></span><=
+/li>
+ <li><span style=3D"color:#c9372c;"><span style=3D"color:#164555;">Currentl=
+y sending the normal image in url format is not supported ( At storefront e=
+nd currently normal image is expecting an image file &amp; dark images as u=
+rls )</span></span></li>
+ <li><span style=3D"color:#c9372c;"><span style=3D"color:#164555;"><span st=
+yle=3D"color:#c9372c;"><span style=3D"color:#164555;">layout field being pa=
+ssed in the dark_info should contain all the fields which are being passed =
+for light theme layout, when theme =3D dark the fields at dark_info layout =
+will be used instead of normal layout</span></span></span></span></li>
+ <li><span style=3D"color:#c9372c;"><span style=3D"color:#164555;"><span st=
+yle=3D"color:#c9372c;"><span style=3D"color:#164555;">Send image, alternate=
+_image as "null" to remove while update</span></span></span></span></li>
+ <li><span style=3D"color:#c9372c;"><span style=3D"color:#164555;"><span st=
+yle=3D"color:#c9372c;"><span style=3D"color:#164555;">Don't sent <span styl=
+e=3D"color:#c9372c;"><span style=3D"color:#164555;"><span style=3D"color:#c=
+9372c;"><span style=3D"color:#164555;">image, alternate_image in payload if=
+ you do not want to update the existing state.</span></span></span></span><=
+/span></span></span></span></li>
+ <li>Max allowed size for image in payload is 5 MB (including all the image=
+s in payload)</li>
+ <li>Supported date formats for keys like <span>valid_from,</span><span>val=
+id_upto are <strong>yyyy-MM-dd'T'HH:mm:ss, yyyy-MM-dd HH:mm:ss, yyyy-MM-dd'=
+T'HH:mm</strong></span></li>
+ <li>Supported format for platform field is "ANDROID,IOS"</li>
+</ol>
+<p><br></p>
+<div id=3D"expander-133524807" class=3D"expand-container">
+ <div role=3D"heading" aria-level=3D"6" id=3D"expander-control-133524807" c=
+lass=3D"expand-control">
+  <button type=3D"button" id=3D"expand-button-133524807" class=3D"aui-butto=
+n aui-button-link aui-button-link-icon-text" aria-expanded=3D"true" aria-co=
+ntrols=3D"expander-content-133524807"><span class=3D"expand-icon aui-icon a=
+ui-icon-small aui-iconfont-chevron-down" aria-hidden=3D"true"></span><span =
+class=3D"expand-control-text conf-macro-render">Request format (For Image)<=
+/span></button>
+ </div>
+ <div role=3D"region" id=3D"expander-content-133524807" class=3D"expand-con=
+tent" aria-labelledby=3D"expand-button-133524807">
+  <p class=3D"p1"><span class=3D"s1">{ </span></p>
+  <p class=3D"p1"><span class=3D"s1">image:&nbsp;</span></p>
+  <p class=3D"p1"><span class=3D"s1">&nbsp;&nbsp; { fieldname:&nbsp;</span>=
+<span class=3D"s2">'image'</span><span class=3D"s1">,</span></p>
+  <p class=3D"p2"><span class=3D"s3">&nbsp;&nbsp; &nbsp; originalname:&nbsp=
+;</span><span class=3D"s1">'18582456_1335829899832663_3626135521768760252_n=
+.jpg'</span><span class=3D"s3">,</span></p>
+  <p class=3D"p1"><span class=3D"s1">&nbsp;&nbsp; &nbsp; encoding:&nbsp;</s=
+pan><span class=3D"s2">'7bit'</span><span class=3D"s1">,</span></p>
+  <p class=3D"p1"><span class=3D"s1">&nbsp;&nbsp; &nbsp; mimetype:&nbsp;</s=
+pan><span class=3D"s2">'image/jpeg'</span><span class=3D"s1">,</span></p>
+  <p class=3D"p1"><span class=3D"s1">&nbsp;&nbsp; &nbsp; destination:&nbsp;=
+</span><span class=3D"s2">'/tmp'</span><span class=3D"s1">,</span></p>
+  <p class=3D"p2"><span class=3D"s3">&nbsp;&nbsp; &nbsp; filename:&nbsp;</s=
+pan><span class=3D"s1">'9d373dc17204cadb11445a6bf59da6c2'</span><span class=
+=3D"s3">,</span></p>
+  <p class=3D"p2"><span class=3D"s3">&nbsp;&nbsp; &nbsp; path:&nbsp;</span>=
+<span class=3D"s1">'/tmp/9d373dc17204cadb11445a6bf59da6c2'</span><span clas=
+s=3D"s3">,</span></p>
+  <p class=3D"p1"><span class=3D"s1">&nbsp;&nbsp; &nbsp; size:&nbsp;</span>=
+<span class=3D"s4">43327</span><span class=3D"s1">,</span></p>
+  <p class=3D"p1"><span class=3D"s1">&nbsp;&nbsp; &nbsp; type:&nbsp;</span>=
+<span class=3D"s2">'image/jpeg'</span><span class=3D"s1">,</span></p>
+  <p class=3D"p2"><span class=3D"s3">&nbsp;&nbsp; &nbsp; name:&nbsp;</span>=
+<span class=3D"s1">'18582456_1335829899832663_3626135521768760252_n.jpg'</s=
+pan><span class=3D"s3">,</span></p>
+  <p class=3D"p2"><span class=3D"s3">&nbsp;&nbsp; &nbsp; originalFilename:&=
+nbsp;</span><span class=3D"s1">'18582456_1335829899832663_36261355217687602=
+52_n.jpg'</span></p>
+  <p class=3D"p2"><span class=3D"s3">&nbsp; &nbsp; }</span></p>
+  <p class=3D"p2"><span class=3D"s3">&nbsp;}</span></p>
+ </div>
+</div>
+<p class=3D"p2"><br></p>
+<h1 id=3D"StorefrontAdminAPI-RemoveBanner(CalledfromWidgetServe&amp;AdsPane=
+l)">Remove Banner (Called from Widget Serve &amp; Ads Panel)</h1>
+<p><strong>DELETE</strong>:&nbsp;<span style=3D"color:#172b4d;">/v1/merchan=
+t/:merchant_id/decorator/view_type/deleteBanner/:bannerId</span></p>
+<h1 id=3D"StorefrontAdminAPI-GetBanner(CalledfromWidgetServe&amp;AdsPanel)"=
+>Get Banner (Called from Widget Serve &amp; Ads Panel)</h1>
+<p><strong>GET</strong>: <span style=3D"color:#172b4d;">/v1/merchant/:merch=
+ant_id/decorator/view_type/bannerDetail/:bannerId</span></p>
+<h1 id=3D"StorefrontAdminAPI-GetDeviceParamsInfo">Get Device Params Info</h=
+1>
+<p><strong>GET</strong>:&nbsp;/v1/merchant/:merchant_id/resource/devicescal=
+einfo</p>
+<p><strong>Description</strong>: This API is used to show device specific r=
+esource upload information. It's used only for smart-icon-* types view (wid=
+get)</p>
+<p><span class=3D"confluence-embedded-file-wrapper confluence-embedded-manu=
+al-size"><img class=3D"confluence-embedded-image" draggable=3D"false" heigh=
+t=3D"235" src=3D"7052551e33b2981a8bf5afe16420f620393174a80479c5c8f542127534=
+f694d1" data-image-src=3D"/download/attachments/149956433/Screen%20Shot%202=
+018-07-05%20at%202.13.51%20PM.png?version=3D1&amp;modificationDate=3D153078=
+0258437&amp;api=3Dv2" data-unresolved-comment-count=3D"0" data-linked-resou=
+rce-id=3D"149956493" data-linked-resource-version=3D"1" data-linked-resourc=
+e-type=3D"attachment" data-linked-resource-default-alias=3D"Screen Shot 201=
+8-07-05 at 2.13.51 PM.png" data-base-url=3D"https://wiki.mypaytm.com" data-=
+linked-resource-content-type=3D"image/png" data-linked-resource-container-i=
+d=3D"149956433" data-linked-resource-container-version=3D"66" tabindex=3D"0=
+" alt=3D"" width=3D"468"></span></p>
+<h1 class=3D"p2" id=3D"StorefrontAdminAPI-ViewCloning"><span class=3D"s3">V=
+iew Cloning</span></h1>
+<p class=3D"p2"><span class=3D"s3"><strong>POST:</strong>&nbsp;/v1/merchant=
+/:merchant_id/decorator/:decorator_id/clone_view</span></p>
+<p><strong>Params</strong>:&nbsp;</p>
+<ol>
+ <li>merchant_id for ACL (0 for Admin)</li>
+ <li>decorator_id:&nbsp;destination Storefront Id</li>
+</ol>
+<p><strong>Data: req.body</strong></p>
+<p>source_view_id=3Dsource view_id</p>
+<p>destination_priority=3Ddestination view&nbsp;priority</p>
+<p class=3D"p2"><span class=3D"s3">&nbsp;</span></p>
+<h1 id=3D"StorefrontAdminAPI-CreateView"><span style=3D"color:#172b4d;">Cre=
+ate View</span></h1>
+<p><strong>POST</strong>:&nbsp;/v1/merchant/0/category/:entity_associated_w=
+ith/decorator/:decorator_id/view</p>
+<p><strong>Params</strong>:&nbsp;</p>
+<ol>
+ <li>entity_associated_with:&nbsp;entity_associated_with of&nbsp;getDecorat=
+ors API</li>
+ <li>decorator_id: Storefront Id</li>
+</ol>
+<p><strong>Allowed Fields to Create</strong>:&nbsp;['name', 'type', 'subtit=
+le', 'status', 'image', 'priority', 'url', 'platform', 'valid_upto', 'valid=
+_from', '<span class=3D"s1">start_time', 'end_time',</span> 'platform', 'si=
+te','dark image', 'meta_layout']</p>
+<p><strong>req.body</strong>&nbsp;=3D {"name":"Test Banner","type":"<span c=
+lass=3D"s1">carousel-1</span>","site":"PAYTM","status":"1","subtitle":"Test=
+","platform":"WEB,HTML5,ANDROID,IOS,MWEB"}<br>
+  For sending the dark info meta layout at request body add the below key v=
+alue pair<br>
+  "attributes" : " {\"dark_info\":{\"image_url\":\"<span class=3D"nolink">h=
+ttps://assetscdn1.paytm.com/images/catalog/view/1697447890878.jpeg\",\"meta=
+_layout\":{\"border_color\":\"#8b92a6\",\"header_bg_color\":\"#0079be\",\"b=
+g_gradient\":[],\"show_scroll_indicator\":true,\"peak_in_value\":\"34\"</sp=
+an>}}}"</p>
+<p><br></p>
+<h1 id=3D"StorefrontAdminAPI-UpdateView"><span style=3D"color:#172b4d;">Upd=
+ate View</span></h1>
+<p><strong>PUT</strong>: /v1/merchant/0/category/:entity_associated_with/de=
+corator/:decorator_id/view/:view_id</p>
+<p><strong>Params</strong>:&nbsp;</p>
+<ol>
+ <li>entity_associated_with:&nbsp;entity_associated_with of&nbsp;getDecorat=
+ors API</li>
+ <li>decorator_id: Storefront Id</li>
+ <li>view_id: view id</li>
+</ol>
+<p><strong>Headers:</strong></p>
+<ol>
+ <li>token: ACL token</li>
+</ol>
+<p><strong>Allowed Fields to Update</strong>: ['name', 'subtitle', 'status'=
+, 'image', 'priority', 'url', 'platform', 'valid_upto', 'valid_from', '<spa=
+n class=3D"s1">start_time', 'end_time',</span> 'platform', 'site','dark ima=
+ge']</p>
+<p><strong>req.body</strong>&nbsp;=3D {"name":"Test Banner","type":"<span c=
+lass=3D"s1">carousel-1</span>","site":"PAYTM","status":"1","subtitle":"Test=
+","platform":"WEB,HTML5,ANDROID,IOS,MWEB"}<br>
+  For sending the dark info meta layout at request body add the below key v=
+alue pair<br>
+  "attributes" : " {\"dark_info\":{\"image_url\":\"<span class=3D"nolink"><=
+span class=3D"nolink">https://assetscdn1.paytm.com/images/catalog/view/1697=
+447890878.jpeg\",\"meta_layout\":{\"border_color\":\"#8b92a6\",\"header_bg_=
+color\":\"#0079be\",\"bg_gradient\":[],\"show_scroll_indicator\":true,\"pea=
+k_in_value\":\"34\</span>"</span>}}}"</p>
+<h1 id=3D"StorefrontAdminAPI-UploadImage"><span style=3D"color:#172b4d;">Up=
+load Image&nbsp;<br></span></h1>
+<p><strong>POST</strong>: <span style=3D"color:#164555;">/v1/merchant/0/:ty=
+pe/upload_image</span></p>
+<p><strong>Params</strong>:&nbsp;</p>
+<ol>
+ <li>type : decorator / view / view_item</li>
+</ol>
+<p><strong>Headers:</strong></p>
+<ol>
+ <li>cookie: ACL cookie&nbsp;</li>
+</ol>
+<p><strong>req.body</strong> =E2=86=92 form-data with resource : files&nbsp=
+;<br><br>
+  This api is called from front end for uploading the image files to s3<br>=
+<br><strong>Response:<br></strong></p>
+<p><span style=3D"color:#172b4d;">{</span><br><span style=3D"color:#172b4d;=
+"> </span><span style=3D"color:#ae2e24;">"url"</span><span style=3D"color:#=
+172b4d;">: </span><span style=3D"color:#0055cc;">"<a href=3D"https://assets=
+cdn1.paytm.com/images/catalog/view/1690526129121.png" class=3D"external-lin=
+k" rel=3D"nofollow">https://assetscdn1.paytm.com/images/catalog/view/169052=
+6129121.png</a>"</span><span style=3D"color:#172b4d;">,</span></p>
+<p><br><span style=3D"color:#172b4d;"> </span><span style=3D"color:#ae2e24;=
+">"result"</span><span style=3D"color:#172b4d;">: </span><span style=3D"col=
+or:#0055cc;">"Image Uploaded Successfully"</span><br><span style=3D"color:#=
+172b4d;">}</span></p>
+<p><br></p>
+<hr>
+<div class=3D"openapi-widget">
+ <template>
+  openapi: 3.0.0 info: title: Storefront Admin API [Flyouts] description: A=
+PI for managing storefront flyouts version: 1.0.0 paths: /flyout/{merchant_=
+id}: post: summary: Create Flyout description: Create a new flyout tags: - =
+Flyout parameters: - name: merchant_id in: path required: true schema: type=
+: integer description: The ID of the merchant requestBody: required: true c=
+ontent: application/json: schema: $ref: '#/components/schemas/FlyoutDTO' re=
+sponses: '201': description: Created content: application/json: schema: $re=
+f: '#/components/schemas/FlyoutAdminCreateOrUpdateResponseDTO' '400': descr=
+iption: Bad Request put: summary: Update Flyout description: Update an exis=
+ting flyout tags: - Flyout parameters: - name: merchant_id in: path require=
+d: true schema: type: integer description: The ID of the merchant - name: f=
+lyout_id in: path required: true schema: type: integer description: The ID =
+of the flyout requestBody: required: true content: application/json: schema=
+: $ref: '#/components/schemas/FlyoutDTO' responses: '200': description: Upd=
+ated content: application/json: schema: $ref: '#/components/schemas/FlyoutA=
+dminCreateOrUpdateResponseDTO' '400': description: Bad Request delete: summ=
+ary: Delete Flyout description: Delete an existing flyout tags: - Flyout pa=
+rameters: - name: merchant_id in: path required: true schema: type: integer=
+ description: The ID of the merchant - name: flyout_id in: path required: t=
+rue schema: type: integer description: The ID of the flyout responses: '202=
+': description: Accepted content: application/json: schema: $ref: '#/compon=
+ents/schemas/FlyoutAdminCreateOrUpdateResponseDTO' '500': description: Inte=
+rnal server error /flyout/{merchant_id}/all: get: summary: Get All Flyouts =
+description: Retrieve a list of all flyouts tags: - Flyout parameters: - na=
+me: merchant_id in: path required: true schema: type: integer description: =
+The ID of the merchant - name: url_key in: query required: false schema: ty=
+pe: string description: The URL key of the flyout - name: flyout_name in: q=
+uery required: false schema: type: string description: The name of the flyo=
+ut - name: category_id in: query required: false schema: type: integer desc=
+ription: The category ID of the flyout - name: id in: query required: false=
+ schema: type: integer description: The ID of the flyout responses: '200': =
+description: Ok content: application/json: schema: $ref: '#/components/sche=
+mas/FlyoutAdminGetResponseDTO' '500': description: Internal server error /f=
+lyout/{merchant_id}/{flyout_id}/nodes: get: summary: Get All Flyout Nodes d=
+escription: Retrieve a list of all nodes for a specific flyout tags: - Flyo=
+ut parameters: - name: merchant_id in: path required: true schema: type: in=
+teger description: The ID of the merchant - name: flyout_id in: path requir=
+ed: true schema: type: integer description: The ID of the flyout responses:=
+ '200': description: Ok content: application/json: schema: $ref: '#/compone=
+nts/schemas/CatalogFlyoutNodeResponse' '500': description: Internal server =
+error /flyout/{merchant_id}/{flyout_id}/node: post: summary: Create Flyout =
+Node description: Create a new flyout node tags: - Flyout parameters: - nam=
+e: merchant_id in: path required: true schema: type: integer description: T=
+he ID of the merchant - name: flyout_id in: path required: true schema: typ=
+e: integer description: The ID of the flyout requestBody: required: true co=
+ntent: application/json: schema: $ref: '#/components/schemas/FlyoutNodeDTO'=
+ responses: '201': description: Created content: application/json: schema: =
+$ref: '#/components/schemas/FlyoutAdminNodeCreateOrUpdateResponseDTO' '400'=
+: description: Bad Request put: summary: Update Flyout Node description: Up=
+date an existing flyout node tags: - Flyout parameters: - name: merchant_id=
+ in: path required: true schema: type: integer description: The ID of the m=
+erchant - name: flyout_id in: path required: true schema: type: integer des=
+cription: The ID of the flyout - name: node_id in: path required: true sche=
+ma: type: integer description: The ID of the node requestBody: required: tr=
+ue content: application/json: schema: $ref: '#/components/schemas/FlyoutNod=
+eDTO' responses: '200': description: Updated content: application/json: sch=
+ema: $ref: '#/components/schemas/FlyoutAdminNodeCreateOrUpdateResponseDTO' =
+'400': description: Bad Request /flyout/{merchant_id}/{flyout_id}/node/bulk=
+: put: summary: Bulk Update Flyout Nodes description: Bulk update flyout no=
+des tags: - Flyout parameters: - name: merchant_id in: path required: true =
+schema: type: integer description: The ID of the merchant - name: flyout_id=
+ in: path required: true schema: type: integer description: The ID of the f=
+lyout requestBody: required: true content: application/json: schema: $ref: =
+'#/components/schemas/FlyoutNodeDTO' responses: '200': description: Updated=
+ content: application/json: schema: $ref: '#/components/schemas/FlyoutAdmin=
+NodeCreateOrUpdateResponseDTO' '400': description: Bad Request /flyout/imag=
+es: get: summary: Get All Images from S3 description: Retrieve a list of al=
+l images from S3 tags: - Flyout responses: '200': description: Ok content: =
+application/json: schema: type: array items: type: string '500': descriptio=
+n: Internal server error /flyout/{merchant_id}/{flyout_id}/{node_id}: delet=
+e: summary: Delete Flyout Node description: Delete a specific flyout node t=
+ags: - Flyout parameters: - name: merchant_id in: path required: true schem=
+a: type: integer description: The ID of the merchant - name: flyout_id in: =
+path required: true schema: type: integer description: The ID of the flyout=
+ - name: node_id in: path required: true schema: type: integer description:=
+ The ID of the node responses: '202': description: Accepted content: applic=
+ation/json: schema: $ref: '#/components/schemas/FlyoutAdminCreateOrUpdateRe=
+sponseDTO' '400': description: Bad Request /url-types: get: summary: Get Al=
+l URL Types description: Retrieve a list of all URL types tags: - Flyout re=
+sponses: '200': description: Ok content: application/json: schema: $ref: '#=
+/components/schemas/CatalogFlyoutItemTypeResponseDTO' '500': description: I=
+nternal server error /flyout-visibility: get: summary: Get Flyout Visibilit=
+y description: Retrieve the visibility of flyouts tags: - Flyout responses:=
+ '200': description: Ok content: application/json: schema: type: object add=
+itionalProperties: type: integer '500': description: Internal server error =
+/flyout-node-visibility: get: summary: Get Flyout Node Visibility descripti=
+on: Retrieve the visibility of flyout nodes tags: - Flyout responses: '200'=
+: description: Ok content: application/json: schema: type: object additiona=
+lProperties: type: integer '500': description: Internal server error compon=
+ents: schemas: FlyoutDTO: type: object properties: data: type: object descr=
+iption: The data of the flyout # Add other properties as needed FlyoutAdmin=
+CreateOrUpdateResponseDTO: type: object properties: httpStatus: type: strin=
+g description: The HTTP status of the response message: type: string descri=
+ption: The message of the response # Add other properties as needed FlyoutA=
+dminGetResponseDTO: type: object properties: id: type: integer description:=
+ The ID of the flyout name: type: string description: The name of the flyou=
+t # Add other properties as needed CatalogFlyoutNodeResponse: type: object =
+properties: id: type: integer description: The ID of the node name: type: s=
+tring description: The name of the node # Add other properties as needed Fl=
+youtNodeDTO: type: object properties: data: type: object description: The d=
+ata of the flyout node # Add other properties as needed FlyoutAdminNodeCrea=
+teOrUpdateResponseDTO: type: object properties: httpStatus: type: string de=
+scription: The HTTP status of the response message: type: string descriptio=
+n: The message of the response # Add other properties as needed CatalogFlyo=
+utItemTypeResponseDTO: type: object properties: types: type: array items: t=
+ype: string description: List of URL types # Add other properties as needed
+ </template>
+ <section>
+ </section>
+ <link rel=3D"stylesheet" href=3D"https://wiki.mypaytm.com/download/attachm=
+ents/171230574/swagger-ui.min.css">
+ <script src=3D"https://wiki.mypaytm.com/download/attachments/171230574/swa=
+gger-ui-bundle.min.js">//<![CDATA[
+
+
+//]]>
+</script>
+ <script src=3D"https://wiki.mypaytm.com/download/attachments/171230574/swa=
+gger-ui-standalone-preset.min.js">//<![CDATA[
+
+
+//]]>
+</script>
+ <script type=3D"text/javascript">//<![CDATA[
+
+(function(){
+    let parent =3D document.currentScript.parentElement
+    let doc =3D parent.getElementsByTagName('template')[0].content.textCont=
+ent
+    let url =3D 'data:text/plain;charset=3DUTF-8;base64, ' + btoa(unescape(=
+encodeURIComponent(doc)))
+    let section =3D parent.getElementsByTagName('section')[0]
+        SwaggerUIBundle({
+            url: url,
+            domNode: section,
+            presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+            ],
+            layout: "StandaloneLayout"
+        })
+})()
+
+//]]>
+</script>
+</div>
+<p><br></p>
+<p><br></p>
+    </div>
+</body>
+</html>
+------=_Part_362_913305849.1741075971809
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/7052551e33b2981a8bf5afe16420f620393174a80479c5c8f542127534f694d1
+
+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
+hFiEjIVihCqF3goThDWFDwkXCw+KYEWURQJECkX6RFGiCqK+ovmivWIoMUUxP7FCsX5xjLiKeLB4
+sfiwBKWEtkSkRKXEe0kmSTPJBMlaya9S/FIuUplSnVK/pRWkA6VLpd/I0MmYyCTINMj8kBWV9ZDN
+lx2UI8gZyB2Tq5P7Li8m7yV/Sf6VAr2CucJJhVaFDUUlRZJileKsEr+Sm1KB0rAyg7KV8inlJyoY
+FR2VYyqNKiuqiqrhqndUv6lJqAWoXVeb2Su012tv6d4J9T3qRPUr6uMaPBpuGpc1xjV5NYmaxZof
+tPi0PLXKtKa1RbT9tW9of9WR1iHp3NdZ0lXVjdVt0YP1DPXS9Hr06fTt9S/qjxnsMfAxqDSYN1Qw
+PGLYYoQxMjXKNBo25jT2MK4wnjdRMok1aTelNLU1vWj6wUzUjGTWYI4yNzHPMn9rIWARbFFrCSyN
+LbMsR62ErA5ZPbDGWltZ51t/tJGxOWrTaUtve9D2uu2inY5dht0be2H7CPtWB2oHV4cKhyVHPcdz
+juNOUk6xTs+c2Zz9nOtccC4OLmUuC/v09+Xsm3JVcE12HdovtP/w/qcH2A4EHnh4kPog8eBdN4yb
+o9t1t3WiJbGYuOBu7F7gPu+h63He47Onlme256yXutc5r2lvde9z3jM+6j5ZPrO+mr65vnN+un4X
+/b77G/kX+S8FWAZcC9gMdAysDsIHuQXVB9MFBwS3h3CFHA7pDxULTQ4dP6R6KOfQPMmUVBYGhe0P
+qwtnQF5zuiOEI05EvI/UiMyPXI5yiLp7mPZw8OHuaNHo1OjpGIOYq0fQRzyOtB7lPXr86PtY7dgr
+cVCce1zrMb5jScem4g3jy4+THw84/jxBOuFcwq9Ex8SGJM6k+KSJE4YnKpOpkknJwyfVThaloFP8
+UnpS5VIvpP5O80zrSpdOz01fP+Vxquu0zOm805tnvM/0ZChmXDqLPRt8dihTM7P8HO25mHMTWeZZ
+Ndk82WnZv3IO5jzNlc8tOk9+PuL8eJ5ZXt0F/gtnL6xf9L34Ml8nv7qAoyC1YKnQs3DgktalqiLO
+ovSi1ct+l19dMbxSUyxYnFuCLYks+VjqUNp5VflqRRlbWXrZxrXga+PlNuXtFUoVFdc5rmdUoioj
+KmdvuN7ou6l3s65KoupKNVN1+i1wK+LWp9tut4fumN5pvat8t+qewL2C+/T302qgmuia+Vrf2vE6
+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
+eHvmeN337vGZ9F3zZwqQC7QLigy+GNIS+onEHGYQHhlxLXLkME20eUzGkVexgnGxxyaO+yTSJHUl
+h6dgU0+mo0+lnGHPaMtMyHLK0T2vdkEtX61QpUjkCrr4cWlkGfu1hxXulYw3Rqs6bvXeWbgvU3u0
+/lkjdZNeC6m1rH22U+fpnW6ZnoK+0YFfg9+Hpl9NjMy8/fUOek8+wTDFP200mzun9C3tZ9lS4ErP
+WtJ628av3yvb849CVj8t4AISQANYA28QC3LBLdANPkFkkBhkDpGgPKgF+oRiQumhwlFlqBGYFjaG
+k+AWeAOtho5BN6DXMdqYNMwwVgR7HDuK08AV4/H4EPwgmQpZITmK3J/8JYUexQNKFcpHBCvCR6oE
+al7qFhpXmkXas3QSdM/pgxkIDOWMOoxvmaKZuZh7WM6wurPpsItyMHCscY5y1XGf4wniNdsjzcfC
+j+VfEfgu+E3op/CGKJUYv7iWhJtkvFShdJ3MC9mf8mwKxooJSm0qlKquarfUcci7apP2Hp0sPSb9
+KkMXY1qTfrOLFiFW9jaytiP2Lg7dTkbOL/Z5uy4fSHSDiKHuLz2VvAp8yHyP+5MHlASZh4DQWlJI
+OFdEW1REtOeRr3Gl8dHHhxLWk1An8Mk0J+VSwlIH0+1PzZ5JOSuZ+TorJUct93texcUDBeSF14qU
+Lj8s1ixpuapX1lVuVTFYaXejr8qguv628J3z9/D3Y2vW61IbBB/0PUxoVmyZbS1ot3yM7nzwNOyZ
+WPdkz6U+pwGGFwMvM4ZNXm2O3HhrOTrzLmJ840PCJDyVMI2aSfyE/nxs7utXg2/R84XfT/+I+Kn3
+c+nX9QWLhTeLvouLS5FLs8uuy70ruiuVq4TV0NWBNYW1vLXv68brxetrG3YbN3/Dv51+39iENu03
+r2/Nf5i3nOz28QFR6gCAGdvc/CkIAO4cABuZm5trxZubGyVIsvEWgJbAnf91ts8aGgAK3m2hLtGR
+5f/+v/K/AAr9zd6OPAG8AAABnWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4
+bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRm
+OlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1u
+cyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxu
+czpleGlmPSJodHRwOi8vbnMuYWRvYmUuY29tL2V4aWYvMS4wLyI+CiAgICAgICAgIDxleGlmOlBp
+eGVsWERpbWVuc2lvbj43MTY8L2V4aWY6UGl4ZWxYRGltZW5zaW9uPgogICAgICAgICA8ZXhpZjpQ
+aXhlbFlEaW1lbnNpb24+MzYxPC9leGlmOlBpeGVsWURpbWVuc2lvbj4KICAgICAgPC9yZGY6RGVz
+Y3JpcHRpb24+CiAgIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+CgVmJegAAEAASURBVHgB7J0HmBVF
+1oYPUTKSQVHJAipiwIAEQRcMi6yIrGICl9UVI4q6Krq45rAq+oNrQEVwQUQQFDC7CAiK4oIECYIg
+qGSQnP95S+va09N35s7AzNzhfud5httdXfGtHuar06frFtq6detek4mACIiACIiACIiACIiACEQS
+KByZqkQREAEREAEREAEREAEREAFHQIJZN4IIiIAIiIAIiIAIiIAIZEJAgjkTOLokAiIgAiIgAiIg
+AiIgAhLMugdEQAREQAREQAREQAREIBMCEsyZwNElERABERABERABERABEZBg1j0gAiIgAiIgAiIg
+AiIgApkQkGDOBI4uiYAIiIAIiIAIiIAIiIAEs+4BERABERABERABERABEciEgARzJnB0SQREQARE
+QAREQAREQAQkmHUPiIAIiIAIiIAIiIAIiEAmBCSYM4GjSyIgAiIgAiIgAiIgAiIgwax7QAREQARE
+QAREQAREQAQyISDBnAkcXRIBERABERABERABEchdArt377Y9e/Yk3Ah5KZOXVjQvG1NbIiACIiAC
+IiACIiACIhAk8Oijj9revXvt2muvtfLlywcvZTjesGGD9e/f3woVKmR33HFHhuu5lSAPc26RVb0i
+IAIiIAIiIAIiIAJZEjj00ENtxYoV9vTTTxuCOJ5xjTzkpUxeWpE+ffr03ZcGlyxZYlOnTrUFCxbY
+xo0brVSpUlaiRIl9qXK/ld2xY4dNmzbNvvnmG1u+fLlbvbByYVWSbMbKas6cOe5GqVixYr70ceXK
+lW4ey5QpY8WLF0+HaO3atfa3v/3NzW39+vXTXdOJCIiACIiACIiACOSUwNFHH+102vfff+80W9Om
+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
+ERABEchVAhLMuYpXlYuACIiACIiACIiACBR0AhLMBX0G1X8REAEREAEREAEREIFcJSDBnKt4VbkI
+iIAIiIAIiIAIiEBBJyDBXNBnUP0XAREQAREQAREQARHIVQISzLmKV5WLgAiIgAiIgAiIgAgUdAIS
+zAV9BtV/ERABERABERABERCBXCUgwZyreFW5CIiACIiACIiACIhAQSdQdMWKFQV9DOq/CIiACIiA
+CIiACIiACOQagUJ70yzXalfFIiACIiACIiACIiACIlDACRTNj/5v2bLFpk2bZqeeeqoVL148XRdm
+zpxpJUuWtPr166dLp8ycOXPs+OOPt8KFC9v27duNvEWL/jqEnTt3WtWqVa1WrVrpyoXzFStWzGrU
+qGGVKlVKl4+TjRs32ueff26rV6+2QoUKWZMmTaxRo0bp8nHthx9+sOOOO86lL1682NatW+fyk0C5
+unXrWtmyZdOV04kIiIAIiIAIiIAIiEABJYCHOa9t9OjReLX3jh8/Pl3TmzZt2lunTp29acJ3708/
+/ZTuWppYdmXWrl3r0ufOnevOqSf406xZs70LFiyIlY2Xr3///rE8HHz88cexeqjD13ndddft3bZt
+WyzvkCFD9jZu3Hjvrl27XFqXLl1ieX0ZPgcMGLB39+7dsXI6EAEREAEREAEREAERKJgE8vylvzRM
+9tJLL6VpSrNBgwbZnj173DH/FClSxMqUKWMrV660u+66K901PMl4kL2Rl/NVq1YZdaYJWJsxY4Zt
+3rzZeaHxAmPhfFx/4YUX7Nprr3Uea/IsXLjQ2rZta926dbP169fbF1984er89NNP7f/+7//s7rvv
+JpszPOK0iycZw5Pcr18/l59+bNiwwZ555hnr2bOnPfzwwy6P/hEBERABERABERABEYhPYBfux0ws
+q+uZFN0vl/JcMCNO07y5NmrUKBs2bJgtWbIk3UAQvjfffLMT1WPHjk13LeoEQYzxSQjFlClTrEqV
+Kk60BvP7fKVKlbILLrjAXUI8Y2leY0vzbFuaV9jKly/v0vinZcuW9sYbb9i///1vF4YRuxA68HWT
+XK5cOUvzStvAgQOd6F+0aFEot05FQAREQAREQAREQAQ8gZ1pYrnzjF3Wa95un5Tuc9CPe+yEqTtt
+1Y50yXl6kueCecSIEc6b26FDB/cZFsVp4Q/WvXt3553t0aOH8yBnhwiCFY/w1KlTLS0kIlb0oIMO
+ih37nUFKly7tPMOzZs2yXr16udjpWKbfDtq1a+fSf/755/ClTM87d+7sRHhaCEmm+XRRBERABERA
+BERABFKZAM/si6X989SS3RlEM2L5ytm7DMFa+NeH+/mCKk8F8y+//GIvvvii3XLLLc4j3Lt3b3vy
+ySdt69at6QaPl/nGG2+0ypUr2z//+U8nan0IRLqMcU527NhhiGJeBMQI8Rg5cqQhzmm/devWhmBv
+0KCB8TJhWpyzyxNVHSEY9CM77VMPXue0mGzLrtCO6oPSREAEREAEREAEROBAJVA0TQgPbVLUOlcr
+nE40e7HcpEwh+/DEYlapWP4RyNNdMogNJkTh/fffd6EY8+fPd+dffvmlC3/wGBDMJUqUsOeff95a
+tGhhaS/WWe3atf3lLD8rVqzods/wO2hQAGGO+MXzfNFFF9lrr73mdtugLfJVq1Yty3qzkwHBjNAm
+BEQmAiIgAiIgAiIgAiIQn4AXzTZzlxPNczfttQ/W7rFkEMv0Os88zLwQRywwccYI5f/85z82b948
+F7bAy39cD9tpp51mt956q3VLexlv6dKl4ctxzxHmbO3G9nMYL+l98sknLr755ZdfdjHUeJ0xhHna
+rhgZYqndxbR/8BCznV12bfny5a4cISIyERABERABERABERCBzAl40Yyn+b01ySOW6XWeCWZe7nvz
+zTdt6NCh9vrrr9u4cePc5+DBg2348OFxQxfuuOMORxfxHGXBF+64jvf6sccecyLbC2bSfTwz3uXq
+1atbnz59YiKdHTIQ82nb0ZE1nZHOC4FHHXVUuvTMTtjPmZCS7JbLrE5dEwEREAEREAEREIEDnYAX
+zX+vXSTfwzCCrPNMMLMrRtr+xS5uONgBvoiEcIvwy38+T4UKFey5557zp+k+iX2ePn26ffPNN/bf
+//7XLr/8cmvfvr3bpaJjx47p8voTPMrshsEuFpMmTXLJnTp1soYNG7q+vfXWW4Z3GO83Lx0+8sgj
+bhs6vkwlnhFmQh++/vprVy9eZcbDDhuZlYtXn9JFQAREQAREQAREIFUJIJofql8kX2OWw+zzJIaZ
+nS9eeeUV9wJfMK6YziBgr7nmGnv11VddbDH7MIftjDPOcFvN4Yn2xjf24clt06aNT3LbxbF3MtvB
+eSNf2Jo3b+72SUYQs0MGfZg4caLbT/n888+PZSdUAxHctGnTWFr4mwmJU0ZUP/HEEy4P+zJzTt3E
+UstEQAREQAREQAREQAQKNoFCabHDGYOHC/aY9qn37LDhd9dg2zmZCIiACIiACIiACIhAahOQYE7t
++dfoRUAEREAEREAEREAEsiCQZzHMWfRDl0VABERABERABERABEQgKQlIMCfltKhTIiACIiACIiAC
+IiACyUJAgjlZZkL9EAEREAEREAEREAERSEoCEsxJOS3qlAiIgAiIgAiIgAiIQLIQkGBOlplQP0RA
+BERABERABERABJKSgARzUk6LOiUCIiACIiACIiACIpAsBCSYk2Um1A8REAEREAEREAEREIGkJCDB
+nJTTok6JgAiIgAiIgAiIgAgkCwEJ5mSZCfVDBERABERABERABEQgKQlIMCfltKhTIiACIiACIiAC
+IiACyUJAgjlZZkL9EAEREAEREAEREAERSEoCEsxJOS3qlAiIgAiIgAiIgAiIQLIQkGBOlplQP0RA
+BERABERABERABJKSgARzUk6LOiUCIiACIiACIiACIpAsBCSYk2Um1A8REAEREAEREAEREIGkJCDB
+nJTTok6JgAiIgAiIgAiIgAgkCwEJ5mSZCfVDBERABERABERABEQgKQlIMCfltKhTIiACIiACIiAC
+IiACyUJAgjlZZkL9EAEREAEREAEREAERSEoCEsxJOS3qlAiIgAiIgAiIgAiIQLIQkGBOlplQP0RA
+BERABERABERABJKSgARzUk6LOiUCIiACIiACIiACIpAsBIrmtCOLFi3KaVGVEwEREAEREAEREAER
+EIF8I1CnTp1stZ1jwVx3YU3X0Ia2Oa4iWx1VZhEQAREQAREQAREQARHIDwIKycgP6mpTBERABERA
+BERABESgwBCQYC4wU6WOioAIiIAIiIAIiIAI5AcBCeb8oK42RUAEREAEREAEREAECgwBCeYCM1Xq
+qAiIgAiIgAiIgAiIQH4QkGDOD+pqUwREQAREQAREQAREoMAQkGAuMFOljoqACIiACIiACIiACOQH
+AQnm/KCuNkVABERABERABERABAoMAQnmAjNV6qgIiIAIiIAIiIAIiEB+EJBgzg/qalMEREAEREAE
+REAERKDAEJBgLjBTpY6KgAiIgAiIgAiIgAjkBwEJ5vygrjZFQAREQAREQAREQAQKDAEJ5gIzVeqo
+CIiACIiACIiACIhAfhCQYM4P6mpTBERABERABERABESgwBCQYC4wU6WOioAIiIAIiIAIiIAI5AcB
+Ceb8oK42RUAEREAEREAEREAECgwBCeYCM1XqqAiIgAiIgAiIgAiIQH4QkGDOD+pqUwREQAREQARE
+QAREoMAQkGAuMFOljoqACIiACIiACIiACOQHAQnm/KCuNkVABERABERABERABAoMAQnmAjNV6qgI
+iIAIiIAIiIAIiEB+EJBgzg/qalMEREAEREAEREAERKDAEJBgLjBTpY6KgAiIgAiIgAiIgAjkBwEJ
+5vygrjZFQAREQAREQAREQAQKDIGied3Tb+fOsVKlStnhR9SKNb1p40abPesba9L0OCtZsmQs/cdl
+y2z16lUu/buFC6xYsWKxcrO/mWkl0vLWrVc/lp+DrVu2GG0ce9zxVrhwYdu+fbuRt2jRX4e6c+dO
+q1K1aqyedIV/O6H83Fmzbc+ePXZwhQp28qmnWpmyZd3Vjb/8Ygvmz3P1FylSJFZ83rdzrVChQtbg
+yIaxtF27dtk3M/5ntevUdfVs3brVvpr2ha1bs9ZKlS5ttevWcdcoJxMBERABERABERABEUhOAoX2
+pllOulbo/R2u2Ia22dPcV17a1ZUbOPg1JzA5GTFsmP3lskts2KjRdvYf/+iu88/1V/3VVq1aaf95
+c5RddH5HO61Va7vxlt62ZfNmO/W4prZ58yab/NXXVq169VgZhOtJxxxtS1audiJ1/rxvrdnRR8Wu
++4PjT2xmA4cMsTp16/kkJ7Zvv7mXDRr4ohPIjRofZdM+n+qO33xnrJ3S/DRDuB/fqKF9PvMba9io
+sSu7bds2a31SM0MgT50x0wl7Lvi8k7+abhUrVrJWJzezVStXxtrj4JMpU42+yERABERABERABERA
+BPKGQLmi2QuyyF7u/TCGzn++2KZMnmybN21ytaHXJ0/81B1//MH75vU7IvSLqVOt62VXOE9xtWrV
+nWeajIXTPLuly5Rx4vO+u/s4T7CrIO0fPMl4kL3hBeZ80U8rbMPO3bZ22w77bPrXTnS3bHaiLf/h
+B5/V/nHnHU4sv/PBR7Z87Xr7cNJkW7ZmnV3Q5c/WvnUrW7Z0qR1a8zA76pgm9r80Eext0XcLnVd7
+4YL5tnTJ9z7ZZqWJ51q161jd+g1s8CsvW+nSZWzxzytj/Zg+91s7usmxsfw6EAEREAEREAEREIFU
+J7B2p1nf7/bYrhy5dHOHXp4L5qbHHWeEWvzww1I3og3r19vbb42yHn+7xt4ZM9oIz8CWL/vBidAm
+aZ7kKNud5s297qZeToi+N25cVJZ0aT58gk8EL2K4cuUq9lz//3P5fly+3B0Pfv0Na3n66bGyZcuV
+s0ef6ufKvPryS1aiRAn7w1ln2YfvvxsT91PTFgB4ifE4T/r0V/FPBSwE2p9zjgszWbN6tbVu29Yq
+Vqrk6qYfhJMUL1481pYOREAEREAEREAERCCVCSCWO3y9255csseunL07aURzngvmKtWqOXE5/csv
+3f1AvDCe1xt797bixYo7kcwF753FoxtleKAv6dbN7n3wIbv+6r/a6lWrorLFTUMI39anT1rIxee2
+e/futPIrnSe6VZs2Gcogknv87W828b//dXnbnHFmmhie6LzkxDm/OXy4CxW5+fa/27DBg10ewkYm
+fPyxtTnzD66+01q2ct7rUW+8YcRRy0RABERABERABERABH4n4MXynM177YyKhWz0yr1JI5rzXDDz
+4t5Z555rH73/niOEqMTzykuArdI8u++PH+/SP3zvXevYqVMsHvh3nL8f4WX+2/U3WKVKle2R++9z
+Ht/svEC3c8cOW7lihROw89LCI4gvjidmaYNQEOpv2Lix85IvS/OCU2bShP9a0xOOt5NOPcU+mzTR
+1q5ZYytW/OzE/zFNmrgOn9uxo/W595/WretFVrlUCRvwdD/D6ywTAREQAREQAREQgVQnEBTL/RsW
+sZFNi1jPwwonjWjOc8HMDXFaq1b21RfTnGB8d+zYtBf9Orj75OwO59nING8tgpP45VZt2mZ6//CS
+Hd7ffv/+tz0/oH9abPQkK3FQiUzLBC9WqFDRxTwT91wybecOYp0R9FlZ1TQvOS8Afjs7bTeN2bOt
+XlqMMp7wGocc6kI3Zn/zjc1J22WD9OqHHOKqo41b77zL5i1dZk8NeNbuuOVma9KgnnsxMKv2dF0E
+REAEREAEREAEDlQCiOXz0sIw8CwjlrvW+HX3sIfqF04a0ZwvgplY3+8XL7IP3n3X2MXi+BNPdPcA
+n7w4h5cZ7+0xxyb2Qhzild0zrrnyylhsdCI3FVu8sbUb2881Oqqx8xZv2LA+suj0r760smXLOC82
++dnN4/13x9knH31onbp0cUIb8Y5XfMyokfbpJx+7dL+dna+0eo0a1v2vV7ldPI6oVds+/uADf0mf
+IiACIiACIiACIpByBPakjZifoFj2ELxo3pWWIT/fAczennC+9/v4yYtv5553nl3d/QonPCtXqeJq
+ZHs4n87LcpUqV064JeKHR48cae1atUy3S4avgJfsgoZQ7fevx23I8BFOMNeocYh7aW9gmrf63oce
+jm15Rxl2wXjqsUeNFwJ9Pae2aOF21eD6R5M/48PZme3bW9vmp7rj8Z/899fEiH/Z37lBwyONWGyZ
+CIiACIiACIiACKQqgcppD/c/bVbEisb5WgpEMztmxLueF9zyxcOMh/aMdu3d+AjD8CKU+OBzO/7J
+pbdue0bsy0YSAYEA7ffsvyOz8oUhM77+2n05yqQJE5xQP/+cs+yqntfaOWnCHeOLRO575FEnoq/9
+619c/PFPP/5oY8eMsePShG3zFi3t7A6/ho6Q/8iGjZwwP6RmTRd6QRrGF5ewlRzhHcEvMXnx38/a
+O6NHG/tEL03beo7dOXgB0HvXfy2tf0VABERABERABEQg9QhkJYazup7bxPLFw8ygmp18shsb36IX
+tFOaN49MJ8Y4aOzDHDZeHmSruZEj3ohdIiaZrerOPfP3eOjz0sIm8P4igoPW7uyzbcLnX9jVabtv
+nNzkmNglduLoeeNN6eKbyx98cJrob2flypU3jr2x+wbecURxhYoVfbKxfd4t118XO+ebA/lCFnbP
+kImACIiACIiACIiACCQvgTz/pr/kRZG+Z2wLh8ebnTEOOuig9BdzeMb2ddvTQjCoN7wAyGGVKiYC
+IiACIiACIiACIpBNAtn9pr988zBnc1x5np0Qjf1thJ7kRr37u5+qTwREQAREQAREQARE4HcC+RLD
+/HvzOhIBERABERABERABERCB5CYgwZzc86PeiYAIiIAIiIAIiIAI5DMBCeZ8ngA1LwIiIAIiIAIi
+IAIikNwEJJiTe37UOxEQAREQAREQAREQgXwmIMGczxOg5kVABERABERABERABJKbgARzcs+PeicC
+IiACIiACIiACIpDPBCSY83kC1LwIiIAIiIAIiIAIiEByE5BgTu75Ue9EQAREQAREQAREQATymYAE
+cz5PgJoXAREQAREQAREQARFIbgISzMk9P+qdCIiACIiACIiACIhAPhOQYM7nCVDzIiACIiACIiAC
+IiACyU1Agjm550e9EwEREAEREAEREAERyGcCEsz5PAFqXgREQAREQAREQAREILkJSDAn9/yodyIg
+AiIgAiIgAiIgAvlMQII5nydAzYuACIiACIiACIiACCQ3AQnm5J4f9U4EREAEREAEREAERCCfCUgw
+5/MEqHkREAEREAEREAEREIHkJiDBnNzzo96JgAiIgAiIgAiIgAjkMwEJ5nyeADUvAiIgAiIgAiIg
+AiKQ3AQkmJN7ftQ7ERABERABERABERCBfCYgwZzPE6DmRUAEREAEREAEREAEkpuABHNyz496JwIi
+IAIiIAIiIAIikM8Eiua0/ZalttlfDt5kq5duy2kVKicCIiACIiACIiACIiACeU6gXJ062Wqz0N40
+y1YJZRYBERABERABERABERCBFCKgkIwUmmwNVQREQAREQAREQAREIPsEJJizz0wlREAEREAEREAE
+REAEUoiABHMKTbaGKgIiIAIiIAIiIAIikH0CEszZZ6YSIiACIiACIiACIiACKUQgx7tkLFy9PoUw
+aagiIAIiIAIiIAIiIAIHCoF6lQ/O1lByLJhp5YjypbPVmDKLgAiIgAiIgAiIgAiIQH4SWLJhc7ab
+V0hGtpGpgAiIgAiIgAiIgAiIQCoRkGBOpdnWWEVABERABERABERABLJNQII528hUQAREQAREQARE
+QAREIJUISDCn0mxrrCIgAiIgAiIgAiIgAtkmIMGcbWQqIAIiIAIiIAIiIAIikEoEJJhTabY1VhEQ
+AREQAREQAREQgWwTkGDONjIVEAEREAEREAEREAERSCUCEsypNNsaqwiIgAiIgAiIgAiIQLYJSDBn
+G5kKiIAIiIAIiIAIiIAIpBIBCeZUmm2NVQREQAREQAREQAREINsEJJizjUwFREAEREAEREAEREAE
+UomABHMqzbbGKgIiIAIiIAIiIAIikG0CEszZRqYCIiACIiACIiACIiACqURAgjmVZltjFQEREAER
+EAEREAERyDaBXBPMu3fvtu3btxuf+2ILFy60cePG7XM9+9KHA7nsggULbOPGjZkOcdeuXTZ27Fhj
+LmQHBoHly5fbzz//fGAMRqMQAREQAREQgVwmkCuC+a233rKSJUta2bJl3efVV19t27Zty9FQpk2b
+Zpdddpn98ssvWZb/9NNPrWbNmvbTTz+5vHv37rUnn3zSateubevWrYssv2TJEitevLh9/fXXkdfz
+I3HVqlX2448/RjbNmLp37+76TL/5Of/8823Pnj3p8sO7efPm9tJLL6VLHzlypOOBSN68ebMdddRR
+9n//93/p8oRPWPjcfPPN9vbbb4cv7dP5/PnzDTGOIcYZyzfffLNPdWa3cDxO2a0nt/KH72naYQ5h
+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
+c0YmShEBERABERABERABERCBGAEJ5hgKHYiACIiACIiACIiACIhARgJFMyYlnlKsWLHEMyunCIiA
+CIiACIiACIiACBRAAvIwF8BJU5dFQAREQAREQAREQATyjoAEc96xVksiIAIiIAIiIAIiIAIFkIAE
+cwGcNHVZBERABERABERABEQg7whIMOcda7UkAiIgAiIgAiIgAiJQAAns00t/BXC86rIIpCOwd+9e
+27Fjh23atMk2b95s27dvN9JS3QoVKmQHHXSQlS5d2sqUKWPFixc30mQiIAIiIAIikIoEJJhTcdY1
+5hgBxPLPP//sRHO1atWsXLlysWupfvDLL7/YihUr3GKievXqTkCnOhONXwREQAREIDUJKCQjNedd
+o/6NAJ5lRHP9+vUllkN3BYsHuHgPfOiyTkVABERABEQgZQhIMKfMVGugUQQQzFWqVIm6pLTfCMAH
+Tnlhq1atsiFDhtjrr79uGzdutG3btrlmv/32W5sxY8Y+d2HXrl02fvx4F3qzz5WpAhEQAREQgZQh
+IMGcRFPNH/O77rrLLr74YtuzZ08S9ezA7cqWLVvs4IMPTmiAK1eutOXLlxvz5I3j2bNn+9Ok+Fyw
+YIEtW7bMCc5x48a5e4nwioULF+aof/CBU5TdcMMNdtttt6W7hMg99thjjTazY5Q7/fTTbebMmbZo
+0SJ75ZVX7MEHH3RVTJ061d55553sVBeZlxj1c845J+54IgspUQREQAREIOUJSDAnyS2AwEFkIBB4
++UyWNwR2796dZUPr1q2zFi1aGDHONWvWtIoVK9rkyZNdOQRY165dLZF6smxoP2To16+fNWjQwKZN
+m+bij7t37+7up6VLl9qrr76a4xbijQ8h/dhjj9mUKVPS1Y34jVcmXcbAyZo1a9xihN+BO+64wy69
+9FLr2bOny8G3ipYoUSKQO2eHRYoUcXx4iVEmAiIgAiIgAokSkGBOlFQu58NTeffddzsv4JIlS3K5
+NVXvCWS1IwbXO3fubCeffHJsB40RI0bY2WefbQhprGHDhm4HCcIJohY7eKY3bNjgm4x9EnLAtag+
+kB6vrnjhEdxDhBtMmDDBzj//fKtXr54hlMuWLWsIRXa8CNratWtjYwimRx1H9ZF8pUqVsoceesiJ
+261bt0YVdS9VdunSxTFi0eEXG8HMP/30k7Vr187mz59vhx56qAvLwKv84YcfBrPFjgnZYNcOfl5+
++eVIhmQO5sMbzpObokWL2gsvvOAWQJR/9NFH04n7YJnbb7895o1mvlmA+HYffvjhWLvBMsH+IP4H
+DBjgFsOUg8Pq1atj49CBCIiACIhAwSAgwZwk81SrVi276KKLbOfOnUnSI3UDAoQxzJo1y/r27eu2
+ViMNYTdo0KBYyAEC6LzzzrOqVau6LdgmTZpENkNAH3XUUU6YEdbw5JNPxgTW4MGD3UuGCEh2oPj+
+++9dGYRj3bp1XRm2cyOeFwvWhQAeOXKkSw/+c/PNN9t7771nrVu3tv79+zvBTYhD2NOLsL7mmmus
+UqVKzluOKMxJCBAiGg/zVVddZY0aNXLCOdgfjvHAt2/f3k466SRDoA8dOtR56+fMmZMuK+yeeeYZ
+5/39+uuvrUOHDi4/u3SEDRHdu3dvI/SE+bn//vvduMP5CEdBJH/xxReOL79fhQv/+l/eZ5995rzw
+lH/uuediIt6XISyEthHJ1MFY6R/MCDWZN2+eW0QhgjPrDyE8LCiYR+rDS057MhEQAREQgYJFQII5
+yeYLT6AseQggNo888sgM3lk8uEcccYTz3CJ27733XieqRo0aZc8++6w77tOnjxOmiC3E4osvvmgI
+RfIj+NjOjmtPP/203XTTTe4YwXvJJZe4Y8Qz4gwxS138kB/vc7du3ZyIDpKiHjyYhEdce+217lKF
+ChWCWdzx2LFjXb2MjR8EpRf5GTInkMA9iwi877773It5wXt48eLF7sU9xkdf2rZta3hm8YQHjTKH
+H364E5QsIMqXLx+8nO544MCBds8997iFBguOHj162FdffZUuDycsavAkN2vWzM1V8+bNXR7CRegr
+7bE4QfATwuLLEDt9zDHHuAXQI488Ym+//batX7/eneMdZy4Je2nTpo0rk1l/WDBQh6/v6quvtuHD
+h2dYxLiK9I8IiIAIiEDSEpBgTtqpUccKAgEEJ95j4s+xo48+2nmk8bziebzgggtcOmLx8ssvN+/Z
+RPAi9jA81ohcQjQaN27sxBzCF08rAott3QhPQNQStoMgJy8e1igLCtao6x999JERL/zAAw+4H8I2
+Jk6cGJU1oTQYEEZBKAL9JpTExxvTF0Ig8MR6q1Onjj9M98liIBFj1w5ELp52fu68807nvY3ykiOK
+w0Z/atSoEUsO5sEDHRTrJUuWjL0UijBnPnkahMecJw9YZv1hntiaz5uf8yAPf02fIiACIiACyUtA
+X1ySvHOjniUBAb7tjsfvxA0Hv9QETyNCiLhgYoX9o34v+hBEiMZgiA3eRl5e44WzYLwvgtN/kx5C
+DK/y559/bs8//7zzRHNMGMVZZ51liE3aQJgiUnNqrVq1sk6dOrn+XXjhhc77m9O6fDkWBHjR8d76
+OGv6zY/nQl4851Hi1teT1SehDYROEEeeleENjjKYe/N9oY8IXDzQ3pgz+oshtHkycP311zvvdceO
+HY3t7rLTnyAH34Y+RUAEREAEkp+APMzJP0fqYT4SwJtIHHCvXr1iYQzvvvuui8P1XkJEVlgIIZaJ
+ayZUAQ8xoQnEFRMWcMIJJxiP/efOnevEJC+MIWDxluKlRQyeeeaZbscU4qMRdMQBI87wQOOlfPzx
+x3P8WB+hyRjwrBJa8Nprr7kwj33FzKIBwfzEE0/EBDOiHsE8ZswYVz1ecTzbLVu2zNBcUMRmuBhI
+gOt1113nQluoG7aEt4SNBQax2ghahO93330XzpLunPkkzpkyhL1QNyEdTZs2dYul6dOnuzAYFlH0
+n0UB4jrR/qRrTCciIAIiIAIFioA8zEk4XWxbJksOAogoRCyhEf5RPS+o4WHmUTzhBwjdoPl8bI3G
+lnMILGzYsGFOoPpjxC92yimnxPYYRoghjhFuGHsP49nu27evS/N7HrNFXNT+0aR5IU/5YN98OkIS
+8ed3zcBjinDeH8aOIewKwe4QhGPQd2Kmzz333Fh4ChwYc9jI79lxzXvtw8cwRSDXrl07VgVfakLs
+c9Auu+wyt5+zT+dFQtoOG+34EBLix9mlxodO0M/Ro0e7sSD6iVX3xtzAN7P+BMfgy+n325PQpwiI
+gAgUHAKF0jxjiQUOhsa0cPV6q1c5sS98CBXVqQgkDQHiUIk7TsT8C3hRQjWz8ng3fSxvMB8eVbyY
+XlAHrxEDzZZtYSOd8A3CA/bV8Hzz6x/Vfrju7HAKl/Xn+7Pv1Jlo/8mHl96LYt+fzD4pQziNX1T4
+vD6dufELkOC1RHn6MvoUAREQARHIewI50bD7/lc378epFkVgvxFARBHnmojXLxjDnJ0OxBOkiGh+
+oixKLJMvXnpUHVmlJfrlHfDJjtiM1+7+7DttJNr/RPMF+02ZqHLx0rPTn2A7OhYBERABESgYBBTD
+XDDmSb3MJQLsdcy3LMriE4APnGQiIAIiIAIikKoEJJhTdeY1bkfAh1cQ08tWa7LfCcADLpjn9PtV
+HYmACIiACIhA6hBQSEbqzLVGGkGAcAleHmPrML6WmThbv81YRPaUSeJlNUIo+GY79iyOF1aSMkA0
+UBEQAREQgZQmIMGc0tOvwfPiFjsdEHKAcEYs5/A92AMKJlwQzeEvHTmgBqnBiIAIiIAIiECCBCSY
+EwSlbAc2AQQiXyoiEwEREAEREAEREIEwAcUwh4noXAREQAREQAREQAREQAQCBCSYAzB0KAIiIAIi
+IAIiIAIiIAJhAhLMYSI6FwEREAEREAEREAEREIEAAQnmAAwdioAIiIAIiIAIiIAIiECYgARzmIjO
+RUAEREAEREAEREAERCBAQIK3DxLMAAArGklEQVQ5AEOHIiACIiACIiACIiACIhAmIMEcJqJzERAB
+ERABERABERABEQgQkGAOwNChCIiACIiACIiACIiACIQJ6ItLwkR0nlIE+Fa/HTt22KZNm2zz5s22
+fft2fdNf2h3AF7nwddilS5d234JYvHhxl5ZSN4cGKwIiIAIiIAK/EZBg1q2Q0gQQyz///LMTzdWq
+VbNy5cqlNI/g4H/55RdbsWKFW0xUr17dCejgdR2LgAiIgAiIQKoQUEhGqsy0xhlJAM8yorl+/foS
+yyFCLB7g4j3wocs6FQEREAEREIGUISDBnGRTTUgAAkWWNwQQzFWqVMmbxgpoK/CBU17YqlWrbMiQ
+Ifb666/bxo0bbdu2ba7Zb7/91mbMmLHPXdi1a5eNHz/ehd7sc2WqQAREQAREIGUISDAnyVRPnz7d
+6tatayVKlHCPvh966CHbvXt3kvTuwO3Gli1b7OCDD05ogCtXrrTly5cbossbx7Nnz/anSfG5YMEC
+W7ZsmROc48aNsz179hjhFQsXLsxR/+ADpyi74YYb7Lbbbkt3CZF77LHHujbTXcjihHKnn366zZw5
+0xYtWmSvvPKKPfjgg67U1KlT7Z133smihqwvsyA955xz4o4n6xqUQwREQAREIBUJSDAnyax//vnn
+9vTTT9vWrVtt6dKl9uKLL9rXX3+dJL07cLuRyKJk3bp11qJFCyPGuWbNmlaxYkWbPHmyg4IA69q1
+a9Isbvr162cNGjSwadOmufjj7t27u5cZuadeffXVHE9kPE4I6ccee8ymTJmSrm7Eb7wy6TIGTtas
+WeMWI4jkO+64wy699FLr2bOny1GsWDG3mAxkz9FhkSJFHB9eYpSJgAiIgAiIQKIEJJgTJZXL+a65
+5ho799xznSg47LDD7Mwzz9RuDbnMnOrZJSMz43rnzp3t5JNPju2gMWLECDv77LMNIY01bNjQ7SBB
+OAE7bYQNz/SGDRvCyc4DzLWoPpAer6544RE+3GDChAl2/vnnW7169dziq2zZsoZQZMeLoK1duzY2
+hmB61HFUH8lXqlQp42kI4pbFXpTxUmWXLl0cIxYdfrERzPvTTz9Zu3btbP78+XbooYe6sAy8yh9+
++GEwW+yYkA128uDn5ZdfjmRI5mA+vOF424sWLWovvPCCWwBR/tFHH00n7oNlbr/99pg3mvlmAeLb
+ffjhh2PtBssE+4P4HzBggPO4Uw4Oq1evjo1DByIgAiIgAgWDgARzEs4Tj88RCvKC5f/kEMYwa9Ys
+69u3b2w+EHaDBg2KhRwggM477zyrWrWq24Jt0qRJruMI6KOOOsoJM8IannzyyZjAGjx4sHvJEAHJ
+DhTff/+9K4NwJDSH9DJlyjjhyIVgXQjgkSNHuvzBf26++WZ77733rHXr1ta/f38nuAlxCHt6EdYs
+0CpVquS85YhChGR2DRGNh/mqq66yRo0aOeEcrgMPfPv27e2kk04yBPrQoUOdt37OnDnpssLumWee
+cd5fnqx06NDB5WeXjrDxu9G7d28j9IT5uf/++924w/kIR0Ekf/HFF47vRRddZIUL//pf3meffea8
+8JR/7rnnYiLelyEshLYRydTBWOkfzPj9nDdvnltEIYIz6w8hPCwoiMumPkKuaE8mAiIgAiJQsAhI
+MCfZfPGHuU+fPnbGGWdYkyZNkqx3qdcdxOaRRx6ZwTuLB/eII45wnlvE7r333utE1ahRo+zZZ591
+x8wjwpQ5RSwSZoNQJD+CD88r1wjFuemmm9wxgveSSy5xx4hnxBlilrr4IT/e527dujkRHZwR6sGD
+SXjEtdde6y5VqFAhmMUdjx071tXL2PhBUHqRnyFzAgl4rxGB9913n3sxj3Nvixcvdi/uMT760rZt
+W8Mzy4t3QaPM4Ycf7gQlC4jy5csHL6c7HjhwoN1zzz1uocHCokePHvbVV1+ly8MJixo8yc2aNXNz
+1bx5c5eHcBH6SnssThD8hLD4MsROH3PMMW4B9Mgjj9jbb79t69evd+d4x5lLwl7atGnjymTWHxYM
+1OHru/rqq2348OEZFjGuIv0jAiIgAiKQtAS0D3OSTQ3eKETT//73P/foN8m6p+6ECCA48R7zkht2
+9NFH2z/+8Q/necXziGcaQyxefvnlhmeT/N3SBC9iD8NjjReTXSEaN27sHvuzKwSP/xFY7JpCeAKh
+BAhu4nnJi4c1aoePoGB1DYT++eijj4x44QceeMBdIb554sSJ1qpVq1DOxE5hQBgFoQgIduLx8aRi
+9IV+44n1VqdOHRcq4s/9J4uBRIwxI3L58Xb99de7hYX3IPt0RHHY6E+NGjViyeT58ccf3Tnlg2K9
+ZMmSsZdCEeaEw9SqVcuJ8JdeesnNd2b9YZ7Yms+bn/MgD39NnyIgAiIgAslLQII5iebmX//6l/OK
+IZb5Qy3LfwJ82x2P3xFKwS81wdOIECIumFhhL9S86EMQIRp37twZGwTeRsQuoTbBeF8Ep/8mPUIX
+8CojOp9//nnnieaYMIqzzjrLEJu0gTBFpObUEMedOnVy/bvwwgudoM9pXb4cCwK86HhvfZw1/ebH
+cyEvnvOchID4dghtIHSCOPKsDG9wlMHcm+8LfQxuZcd15oz+YghtngwgzvFed+zY0VjYZKc/QQ6u
+Uv0jAiIgAiJQIAgoJCNJpomYUx7rv/XWW+6PNrGPPHqX5S8BvInEAffq1SsWxvDuu++6OFzvJURk
+hYUQYpm4ZkIV8BATmsAcExZwwgknGI/9586d68QkL4whYIlNxkuLGOSlT14YIz4aQUccMOIMDzRe
+yscffzzHj/URmowBzyqhBa+99tp+uddYNCCYn3jiiZhgRtQjmMeMGeMmEq84nu2WLVtmmNigiM1w
+MZAA1+uuu86FtlA3bAlvCRsLDEJiELQI3++++y6cJd0580mcM2X43aNuQjqaNm3qFkts/UgsOYso
++s+igPCORPuTrjGdiIAIiIAIFCgC8jAnwXTxR5c36RFeCCJv/FH+5JNP3GNtn6bPvCWAiELEEhrh
+H9XzghoeZh7Fs5MFQjdoPh9bo7HlHAILGzZsmBOo/tjP9SmnnBLbY5g5Rxwj3DD2Hsaz3TcttIM0
+v+cxW8QR2hE20ryQ51qwbz4dIYn487tm4DFFOO8PY8cQ7mXEPuEY9J2YaXaAueCCC1wTcGDMYSO/
+Z8c177UPH8MUgVy7du1YFXypCbHPQbvsssvcfs4+nRcJaTtstONDSIgfX7JkSSxchn6OHj3ajQXR
+z6LWG3MD38z6ExyDL8e2hDIREAEREIGCRaBQmmcsscDB0LgWrl5v9Spn/IMdyqZTEUhqAuyAQdxx
+IuZfwIsSqpmVx7vpY3mD+fCo4sX0gjp4jd0n2LItbKQTvkF4wL4anm9+/aPaD9edHU7hsv58f/ad
+OhPtP/nw0ntR7PuT2SdlCKfxiwqf16czN34BEryWKE9fRp8iIAIiIAJ5TyAnGnbf/+rm/TjVogjs
+NwKIKOJcE/H6BWOYs9OBeIIUEc1PlEWJZfLFS4+qI6u0RLcthE92xGa8dvdn32kj0f4nmi/Yb8pE
+lYuXnp3+BNvRsQiIgAiIQMEgoBjmgjFP6mUuEWCvY75GWhafAHzgJBMBERABERCBVCUgwZyqM69x
+OwI+vIKYXrZak/1OAB5wwTyn36/qSAREQAREQARSh4BCMlJnrjXSCAKES/DyGFuH8bXMxNn6bcYi
+sqdMEi+rEULBN9uxZ3G8sJKUAaKBioAIiIAIpDQBCeaUnn4Nnhe32OmAkAOEM2I5h+/BHlAw4YJo
+Dn/pyAE1SA1GBERABERABBIkIMGcIChlO7AJIBD5UhGZCIiACIiACIiACIQJKIY5TETnIiACIiAC
+IiACIiACIhAgIMEcgKFDERABERABERABERABEQgTkGAOE9G5CIiACIiACIiACIiACAQISDAHYOhQ
+BERABERABERABERABMIEJJjDRHQuAiIgAiIgAiIgAiIgAgECEswBGDoUAREQAREQAREQAREQgTAB
+CeYwEZ2LgAiIgAiIgAiIgAiIQICABHMAhg5FQAREQAREQAREQAREIExAX1wSJqLzlCLAt/rt2LHD
+Nm3aZJs3b7bt27frm/7S7gC+yIWvwy5durT7FsTixYu7tJS6OTRYERABERABEfiNgASzboWUJoBY
+/vnnn51orlatmpUrVy6leQQH/8svv9iKFSvcYqJ69epOQAev61gEREAEREAEUoWAQjJSZaY1zkgC
+eJYRzfXr15dYDhFi8QAX74EPXdapCIiACIiACKQMAQnmJJtqQgL4keUNAQRzlSpV8qaxAtoKfOCU
+F7Zq1SobMmSIvf7667Zx40bbtm2ba/bbb7+1GTNm7HMXdu3aZePHj9fv2D6TVAUiIAIikFoEJJiT
+ZL5HjhzpYkRLlChh/Nx+++0xsZAkXTwgu7FlyxY7+OCDExrbypUrbfny5Ybo8sbx7Nmz/WlSfC5Y
+sMCWLVvmBOe4ceNsz549RnjFwoULc9Q/+MApym644Qa77bbb0l1C5B577LGuzXQXsjih3Omnn24z
+Z860RYsW2SuvvGIPPvigKzV16lR75513sqgh68ssRs8555y448m6BuUQAREQARFIRQISzEkw67x4
+9tNPP9kXX3xhW7dutR9//NHeffddd54E3Tugu7B79+4sx7du3Tpr0aKFEeNcs2ZNq1ixok2ePNmV
+Q4B17drVEqkny4b2Q4Z+/fpZgwYNbNq0aS7+uHv37u5lxqVLl9qrr76a4xbijQ8h/dhjj9mUKVPS
+1Y34jVcmXcbAyZo1a9xiBJF8xx132KWXXmo9e/Z0OYoVK+YWkoHsOTosUqSI48NLjDIREAEREAER
+SJSABHOipHIxHzsSXHvttdasWTMnCmrUqGGNGze29evX52KrqhoCLFYyM6537tzZTj755NgOGiNG
+jLCzzz7bENJYw4YN3dMBwgnYaSNseKY3bNgQTnYeYK5F9YH0eHXFC4/w4QYTJkyw888/3+rVq2cI
+5bJlyxpCkR0vgrZ27drYGILpUcdRfSRfqVKl7KGHHnLilsVelPFSZZcuXRwjFh1+sRHMy4KxXbt2
+Nn/+fDv00ENdWAZe5Q8//DCYLXZMyAa/N/y8/PLLkQzJHMyHNxxve9GiRe2FF15wCyDKP/roo+nE
+fbAMT3q8d535ZgHi23344Ydj7QbLBPuD+B8wYIDzuFMODqtXr46NQwciIAIiIAIFg4AEcxLNE3+Q
+lyxZYkOHDrWPP/7YjjvuuCTqXWp2hTCGWbNmWd++fc17JRF2gwYNioUcIIDOO+88q1q1qtuCbdKk
+SQ4WAvqoo45ywoywhieffDImsAYPHuxeMkRAsgPF999/78ogHOvWrevKlClTxglHLgTrQgATwhO2
+m2++2d577z1r3bq19e/f3wluQhzCnl6E9TXXXGOVKlVy3nJEIUIyu4aIRkxeddVV1qhRIyecw3Xg
+gW/fvr2ddNJJhkDn3sZbP2fOnHRZYffMM8847+/XX39tHTp0cPnZpSNsiOjevXsboSfMz/333+/G
+Hc5HOAoimSc38L3ooouscOFf/8v77LPPnBee8s8991xMxPsyhIXQNr+T1MFY6R/MCG+ZN2+eW0Qh
+gjPrDyE8LCiIy6Y+wq1oTyYCIiACIlCwCEgwJ9F88Ye1Vq1a7hE/Hk1EhCx/CSA2jzzyyAzeWTy4
+RxxxhPPcIsbuvfdeJ6pGjRplzz77rDvu06ePE6aILcTiiy++6IQi+RF8eF659vTTT9tNN93kjhG8
+l1xyiTtGPCPOELPUxQ/58T5369bNieggHerBg0l4BE8ssAoVKgSzuOOxY8e6ehkbPwhKL/IzZE4g
+Ae81IvC+++5zL+Zx7m3x4sUuFp/x0Ze2bdsanllevAsaZQ4//HAnKFlAlC9fPng53fHAgQPtnnvu
+cQsNFhw9evSwr776Kl0eTljU4EnmyQ1z1bx5c5eHcBH6SnssThD8hLD4MsROH3PMMe7375FHHrG3
+337bPe3h9xHvOHNJ2EubNm1cmcz6w4KBOnx9V199tQ0fPjzDIsZVpH9EQAREQASSloAEcxJNDY+G
+EUQ8ij/ssMPs8ccfT6LeqStRBBCceI95yQ07+uijnUcazyuexwsuuMClIxYvv/xy855NBC9iD8Nj
+jchlVwhCcRBzCF88rQgstnUjPAFRe/fddztBTl48rFEWFKxR1z/66CMjXviBBx5wP4RtTJw4MSpr
+QmkwIIyCUAT6zf2LJxWjL4RA4In1VqdOHX+Y7pN7PxFj1w5ELp52fu68807nvY3ykiOKw0Z/CHvy
+FsyDBzoo1kuWLBl7KRRhznyyqMVjzpMHLLP+ME9szefNz3mQh7+mTxEQAREQgeQlIMGchHNDXChe
+MbyNiBFZ/hHg2+54/B6OG8bTiKcXI1bYP+r3og9BhGjcuXNnrPN4G3l5jdCOYLwvc+y/SQ8hhlcZ
+QYgAbdKkiXsRjjCKs846y4UVdOrUyebOneu8lrHKs3nQqlUru/DCC+1Pf/qT4XFGDO6rsSBAPCL4
+PS/6zY/nQht4zqPEbaLtE9pA6AR1+h+8634OgvXgDY6y4O+V7wt1BbeyoxxzRn8xhDZPBvBQw6tj
+x45ufrPTnyAHV6n+EQEREAERKBAEJJiTYJoQFDyi9rsEsEsGL5b9+c9/dh66JOhiynYBbyJxwL16
+9YqFMbCDCXG43kuIyAoLIcQycc2EKuAhJjSBuGLCAk444QTjsT+il7nnhTEELN5SRDJi8Mwzz3Rb
+qhEfjaAjDpi9iPFA46Xk6UNQ9GVngnhhkTHgWSW04LXXXouJ/+zUE86LYCXs5IknnogJZjzPjHHM
+mDEuO15xPNstW7YMF094PHC97rrrjNAW6oYt4S1hY4FBrDaCFuH73XffhbOkO2c+iXOmDIsh6iak
+o2nTpi7efPr06S4MhkUU/WdRgHhOtD/pGtOJCIiACIhAgSIgwZwk04WYqly5svNAIjJOPPHE/eL1
+S5LhFdhuIKIQsYheHtXjZbziiitcLCveVAyhGzT/SJ+t0fiyDQQWYQh4QRGobE03bNgwJ37xOPNC
+GNcwhBghBrTLo/yXXnrJibW+aS8dfvLJJ86LSiwtL/ZF7R9Nmhfy1Bfsm09HSCLA2TUDYc8OHvRr
+fxg7hrArBB5zwjH4tkA82LfeeqvrF+0w1lNOOSVDc+T37LgY9BgHj9nGj+3mateu7X5fYOu9/cFK
+L7vsMhciQkw042TR473JwXzUzXWM+HE85SxKmJs333zTLV7pG6If9nBk4cLcwDez/gT77dtkW0KZ
+CIiACIhAwSJQKM0zlljgYGhcC1evt3qVE/vCh1BRncYhgEcLTxgCC2Emy30CxKESd5yI+RfwooRq
+ZuWZUx/LG8yHh5g5Z77DRgw0oTlhIx0xuj/uDxYB/PpHtR9uNzucwmX9+f7sO3Um2n/yIZS9KPb9
+yeyTMoTThLfi8+nMjV+A+HoS7Y/Pr08REAEREIH8IZATDStVlj9zFdkqImh/CKHIypUYSQARRZxr
+Il4/vKU5sXiCFBHNT5RFiWXyxUuPqiOrNIR3Igaf7IjNeHXuz77TRqL9TzRfsN+UiSoXLz07/Qm2
+o2MREAEREIGCQUAhGQVjntTLXCLAXsd8jbQsPgH4wEkmAiIgAiIgAqlKQII5VWde43YEfHgFL3Tx
+0qXsdwLwgAvmOf1+VUciIAIiIAIikDoEFJKROnOtkUYQIFyCl8fYOoyvZSbONurFsIiiB3QSL6sR
+QsE327FncbywkgMaggYnAiIgAiIgAr8RkGDWrZDSBHhxi50OCDlAOCOWc/ge7AHFES6IZmLqwy+3
+HVAD1WBEQAREQAREIAECEswJQFKWA58AopBtxGQiIAIiIAIiIAIiECagGOYwEZ2LgAiIgAiIgAiI
+gAiIQICABHMAhg5FQAREQAREQAREQAREIExAgjlMROciIAIiIAIiIAIiIAIiECAgwRyAoUMREAER
+EAEREAEREAERCBOQYA4T0bkIiIAIiIAIiIAIiIAIBAhIMAdg6FAEREAEREAEREAEREAEwgQkmMNE
+dC4CIiACIiACIiACIiACAQISzAEYOhQBERABERABERABERCBMAF9cUmYiM5TigDf6rdjxw7btGmT
+bd682bZv365v+ku7A/giF74Ou3Tp0u5bEIsXL65v/Eup3wwNVgREQAREIEhAgjlIQ8cpRwCx/PPP
+PzvRXK1aNStXrlzKMYg34F9++cVWrFjhFhPVq1d3AjpeXqWLgAiIgAiIwIFMQCEZB/LsamxZEsCz
+jGiuX7++xHKIFosHuHgPfOiyTkVABERABEQgZQhIMKfMVGugUQQQzFWqVIm6pLTfCMAHTnlhq1at
+siFDhtjrr79uGzdutG3btrlmv/32W5sxY8Y+d2HXrl02fvx4F3qzz5WpAhEQAREQgZQhIMGchFP9
+0ksvWZs2bWzPnj1J2LsDq0tbtmyxgw8+OKFBrVy50pYvX26ILm8cz549258mxeeCBQts2bJlTnCO
+GzfO3UeEVyxcuDBH/YMPnKLshhtusNtuuy3dJUTusccea7SZHaPc6aefbjNnzrRFixbZK6+8Yg8+
++KCrYurUqfbOO+9kp7rIvMSon3POOXHHE1lIiSIgAiIgAilPQII5yW6BuXPn2l/+8hcrW7ZskvXs
+wOzO7t27sxzYunXrrEWLFkaMc82aNa1ixYo2efJkVw4B1rVrV0ukniwb2g8Z+vXrZw0aNLBp06a5
++OPu3bu7lxmXLl1qr776ao5biDc+hPRjjz1mU6ZMSVc34jdemXQZAydr1qxxixFE8h133GGXXnqp
+9ezZ0+UoVqyYlShRIpA7Z4dFihRxfHiJUSYCIiACIiACiRKQYE6UVB7kQ2R07tzZPvjgAxcmwA4O
+stwlkBVjrjMnJ598cmwHjREjRtjZZ59tCGmsYcOGbgcJwgnYaSNseKY3bNgQTnYeYK5F9YH0eHXF
+C4/w4QYTJkyw888/3+rVq2cIZRZfCEV2vAja2rVrY2MIpkcdR/WRfKVKlbKHHnrIidutW7dGFXUv
+VXbp0sUxYtHhFxvBzD/99JO1a9fO5s+fb4ceeqgLy8Cr/OGHHwazxY4J2WAnD35efvnlSIZkDubD
+G85Tm6JFi9oLL7zgFkCUf/TRR9OJ+2CZ22+/PeaNZr5ZgPh2H3744Vi7wTLB/iD+BwwY4DzulIPD
+6tWrY+PQgQiIgAiIQMEgIMGcRPN07733Om8l4RgICFn+EyCMYdasWda3b1/zXkmE3aBBg2IhBwig
+8847z6pWreq2YJs0aZLrOAL6qKOOcsKMsIYnn3wyJrAGDx7sXjJEQLIDxffff+/KMO9169Z1ZcqU
+KeOEIxeCdSGAR44c6fIH/7n55pvtvffes9atW1v//v2d4CbEIezpRVhfc801VqlSJectRxTmJPwH
+EY2H+aqrrrJGjRo54RzsD8d44Nu3b28nnXSSIdCHDh3qvPVz5sxJlxV2zzzzjPP+fv3119ahQweX
+n106woaI7t27txF6wvzcf//9btzhfISjIJK/+OILx/eiiy6ywoV//S/vs88+c154yj/33HMxEe/L
+EBZC24hk6mCs9A9mhJrMmzfPLaIQwZn1hxAeFhTEZVMfXnLak4mACIiACBQsAhLMSTJf/AFHBBEP
+unPnTtcr/hjL8pcAYvPII4/M4J3Fg3vEEUc4zy1il8UOomrUqFH27LPPuuM+ffo4YUo6YvHFF180
+hCL5EXxsZ8e1p59+2m666SZ3jOC95JJL3DHiGXGGmKUufsiP97lbt25ORAfpUA8eTMIjrr32Wnep
+QoUKwSzueOzYsa5exsYPgtKL/AyZE0jAe40IvO+++9yLeZx7W7x4sXtxj/HRl7Zt2xqeWV68Cxpl
+Dj/8cCcoWUCUL18+eDnd8cCBA+2ee+5xCw0WHD169LCvvvoqXR5OWNTgSW7WrJmbq+bNm7s8PMmh
+r7TH4gTBTwiLL0Ps9DHHHOMWQI888oi9/fbbtn79eneOd5y5JOyFhS2WWX9YMFCHr+/qq6+24cOH
+Z1jEuIr0jwiIgAiIQNISkGBOgqnBi4UAe+qpp5zHDk8Uf2jxXAZfMEuCrqoLIQIITrzHvOSGHX30
+0c4jjecVz+MFF1zg0hGLl19+uXnPJoIXsYfhsUbksitE48aNnZhD+OJpRWCxrRvhCYjau+++2wly
+8uJhjbKgYI26/tFHHxnxwg888ID7IWxj4sSJUVkTSoMBYRSEItBvQkl8vDF9IQQiuPirU6dOZL0s
+BhIxdu1A5OJp5+fOO+903tsoLzmiOGz0p0aNGrHkYB480EGxXrJkydhLoQhz5rNWrVrOY86TByyz
+/jBPbM3nzc95kIe/pk8REAEREIHkJaAvLkmCuUEg4zXk7f2g8ccVz9eJJ54YTNZxHhLg2+54/E7c
+cPBLTfA0IoSICyZW2D/q96IPQYRo9E8L6DKLIF5eI7QjGO+L4PTfpEfoAl7lzz//3J5//nnnieaY
+hdNZZ51liE3aQJgiUnNqrVq1sk6dOrn+XXjhhc77m9O6fDkWBHjR8d76OGv6zY/nQl4851Hi1teT
+1Se/L4ROEEeeleENjjKYe/N9oY/Brey4zpz58CiENk8Grr/+eue97tixo7HdXXb6E+Tg29enCIiA
+CIhA8hOQhzkJ5oiXxvgDzh9TfhAbiAHElsRy/k4Q3kTigHv16hULY3j33XddHK73EiKywkIIsUxc
+M6EKeIgJTSCumLCAE044wXjsz44oiEleGEPA4i3FS4sYPPPMM92WajxlQNARB4w4wwPNQurxxx/P
+8WN97i3GgGeV0ILXXnvNLdj2lTSLBgTzE088ERPMiHrGOGbMGFc9XnE82y1btszQXFDEZrgYSIDr
+dddd50JbqBu2hLeEjQUGsdr+ic13330XzpLunPkkzpkyLGCpm5COpk2busXS9OnTXRgMiyj6z+8p
+4R2J9iddYzoRAREQAREoUATkYU6S6fIeSt8dxJMXZD5Nn3lPgDlAxBIa4R/V84IaHmYexRN+wFwF
+zedjazS2nENgYcOGDXMC1R8jfrFTTjkltscwQgxxjHDD2HsYz3bftJcOSfN7HrNFXNT+0aQF75tg
+33w6QhLx53fNwGOKcN4fxuKPXSHYHYJwDPpOzPS5554bC0+BA2MOG/k9O64FfyeCxzBFINeuXTtW
+BV9qQuxz0C677DK3n7NP50VC2g4bdfsQEuLHlyxZEguXoZ+jR492Y0H0E6vujbmBb2b9Cfbbl2Nb
+QpkIiIAIiEDBIlAozTOWWOBgaFwLV6+3epUT+8KHUFGdikDSECAOlbjjRMy/gBclVDMrz2N9H8sb
+zIdHFS+mF9TBa8RAs2Vb2EgnfIPwgH01PN/8+ke1H647O5zCZf35/uw7dSbaf/Lhpfei2Pcns0/K
+8ITHLyp8Xp/O3PgFSPBaojx9GX2KgAiIgAjkPYGcaNh9/6ub9+NUiyKw3wggoohzTcTrF4xhzk4H
+4glSRDQ/URYllskXLz2qjqzS/DZ5WeWDT3bEZrz69mffaSPR/ieaL9hvykSVi5eenf4E29GxCIiA
+CIhAwSCgGOaCMU/qZS4RYK9jvkZaFp8AfOAkEwEREAEREIFUJSDBnKozr3E7Aj68gphetlqT/U4A
+HnDBPKffr+pIBERABERABFKHgEIyUmeuNdIIAoRL8PIYW4fxtczE2fptxiKyp0wSL6sRQsE327Fn
+cbywkpQBooGKgAiIgAikNAEJ5pSefg2eF7fY6YCQA4QzYjmH78EeUDDhgmgOf+nIATVIDUYEREAE
+REAEEiQgwZwgKGU7sAkgEPlSEZkIiIAIiIAIiIAIhAkohjlMROciIAIiIAIiIAIiIAIiECAgwRyA
+oUMREAEREAEREAEREAERCBOQYA4T0bkIiIAIiIAIiIAIiIAIBAjsUwwz35QiEwEREAEREAEREAER
+EIEDmUCOvxr7QIaisYmACIiACIiACIiACIiAJ6CQDE9CnyIgAiIgAiIgAiIgAiIQQUCCOQKKkkRA
+BERABERABERABETAE5Bg9iT0KQIiIAIiIAIiIAIiIAIRBCSYI6AoSQREQAREQAREQAREQAQ8AQlm
+T0KfIiACIiACIiACIiACIhBBQII5AoqSREAEREAEREAEREAERMATkGD2JPQpAiIgAiIgAiIgAiIg
+AhEEJJgjoChJBERABERABERABERABDwBCWZPQp8iIAIiIAIiIAIiIAIiEEFAgjkCipJEQAREQARE
+QAREQAREwBOQYPYk9CkCIiACIiACIiACIiACEQQkmCOgKEkEREAEREAEREAEREAEPAEJZk9CnyIg
+AiIgAiIgAiIgAiIQQUCCOQKKkkRABERABERABERABETAE5Bg9iT0KQIiIAIiIAIiIAIiIAIRBCSY
+I6AoSQREQAREQAREQAREQAQ8AQlmT0KfIiACIiACIiACIiACIhBBQII5AoqSREAEREAEREAEREAE
+RMATkGD2JPQpAiIgAiIgAiIgAiIgAhEEJJgjoChJBERABERABERABERABDwBCWZPQp8iIAIiIAIi
+IAIiIAIiEEFAgjkCipJEQAREQAREQAREQAREwBOQYPYk9CkCIiACIiACIiACIiACEQQkmCOgKEkE
+REAEREAEREAEREAEPAEJZk9CnyIgAiIgAiIgAiIgAiIQQUCCOQKKkkRABERABERABERABETAE5Bg
+9iT0KQIiIAIiIAIiIAIiIAIRBCSYI6AoSQREQAREQAREQAREQAQ8gaL+ILc/58yZY6VKlbJatWrF
+mtq4caN98803dtxxx1nJkiVj6cuWLbNVq1a59MWLF9u6deusUKFCsescNGnSxIoUKWIzZ8603bt3
+u2tFixa1smXLWs2aNY1jmQiIgAiIgAiIgAiIgAjsK4FCe9NsXytJpPzFF1/ssv3nP/+Jid+hQ4da
+165dbcyYMdahQ4dYNT169LCVK1faW2+9ZZQbPnx47BoHVatWtW+//daKFy/uhPOiRYvSXUc0T5o0
+yV1Ld0EnIiACIiACIiACIiACIpBNAnkWkoHwRcRu2rTJdRGd/umnn7rj999/37xu37Ztm02ZMsWu
+uOIKK1y4sPMY9+vXz13fuXOn8fPjjz9ahQoVnIe5RIkSNnXqVHedOpYvX24NGza0Pn362J49e7KJ
+Q9lFQAREQAREQAREQATymsCuLNy3WV3P7f7mmWA+/vjjjVCLpUuXujGtX7/eRo4caT179nSeZMIz
+sB9++MEI3yBMwxuhFxhhFvz4c9IQ2MHzQw45xK688kqjfi/CyScTAREQAREQAREQARFIPgI708Ry
+5xm7rNe8X0Nswz0c9OMeO2HqTlu1I3wl787zTDBXq1bNmjVrZtOmTXOjQxSXKVPGbr31VhdawTk2
+Y8YMq1Onjh122GHunH+2bt1qu3btsu3b/7+9+3eJIwjDOP7G87C4nM0qEa6QIGks5Iogouj5o/AK
+UcG0iqSytUuZLtqlshLbIKQRxB+of4BCQAJptDFlQFshYkJ8RubYMynGZt0w3wVvz725Y+ezzcPL
+O7s/7fr62u39h6owq+qsPmZ9rvaMjY0Nq9frTUHaj2ePAAIIIIAAAgggkB8BrVIr3r18/P7rr9Cs
+sPz2260psLY0L2fLdAKZBeZisWhTU1O2v7/vJnh0dGQTExNuEeDY2Jjt7Oy443t7ezY3N2car00L
+BRWq9b/CcalUMlWr0wv9BgcHXeVZn/f09NjV1ZUtLy+77/OCAAIIIIAAAgggkF+B1rsg/Kmv1d68
+aGkKzT4s9z1/Zoevi5bcR8MnmUhmgVmzq9VqdnJyYpeXl7a9vd1Y6Dc9PW2bm5su6Kp/eXx8vIGh
+irL6kdWqcX5+7v7U8+zbMFR51qJBtXtcXFzYwcGBq1wvLi66qnTjh3iDAAIIIIAAAgggkEuBh6G5
+/uXWVZbzEJYFlum913p7e13LxO7urrvLhVo0tGl/dnbmqswKxtVq1R33L11dXe5Wcf7/9F49zGrf
+qFQq7nB3d7etr6+7arb6orU4kA0BBBBAAAEEEEAg3wI+NNvXW/v847dVy09fWfZimVaYkySxmZkZ
+W1hYsNHRUevs7HTnoUDsj4+MjFhHR4c/P7fX7eMes6kqzYYAAggggAACCCDwfwn40PzuZeHJ2zDS
+cplWmHWbuMnJSdva2jK1Yfi2Cj2UZHZ21h1XX/PDh46cnp7a8fFxU4tFf3+/m4f6lvXwEv9bWjQ4
+Pz9vw8PD1t7enp4r7xFAAAEEEEAAAQRyLqDQ/OHV/R3S8nKqmQZmTXpgYMDNXQv10tvQ0NA/j6va
+vLq6amtra43h/sElejqgFgHqns3pbWVlxZaWlhohOv0Z7xFAAAEEEEAAAQQQeIxAZk/6e8xJMRYB
+BBBAAAEEEEAAgbwIZNrDnJdJcx4IIIAAAggggAACCIQKEJhDpRiHAAIIIIAAAgggEKUAgTnKy86k
+EUAAAQQQQAABBEIFCMyhUoxDAAEEEEAAAQQQiFKAwBzlZWfSCCCAAAIIIIAAAqECBOZQKcYhgAAC
+CCCAAAIIRClAYI7ysjNpBBBAAAEEEEAAgVABAnOoFOMQQAABBBBAAAEEohQgMEd52Zk0AggggAAC
+CCCAQKgAgTlUinEIIIAAAggggAACUQoQmKO87EwaAQQQQAABBBBAIFSAwBwqxTgEEEAAAQQQQACB
+KAVabm5uopw4k0YAAQQQQAABBBBAIESg0NbW9r5cLluSJFYoFEK+wxgEEEAAAQQQQAABBKIQUHH5
+D1v92j9+rbExAAAAAElFTkSuQmCC
+------=_Part_362_913305849.1741075971809--
