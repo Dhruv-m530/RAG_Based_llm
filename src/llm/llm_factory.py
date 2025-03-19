@@ -52,7 +52,7 @@ def get_llm(
         return ChatOpenAI(
             model_name=model_name,
             openai_api_key=OPENAI_API_KEY,
-            temperature=kwargs.get("temperature", 0.1),
+            temperature=kwargs.get("temperature", 0.9),
             max_tokens=kwargs.get("max_tokens", 2048)
         )
     
